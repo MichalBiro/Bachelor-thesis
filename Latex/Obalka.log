@@ -1,0 +1,327 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.25)  31 MAR 2022 16:10
+entering extended mode
+**./Obalka.tex
+(Obalka.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27>
+
+! LaTeX Error: Command \thepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \renewcommand\thepage
+                         {\roman{page}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \noindent
+              \begin{center}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> {\large 
+                   {}SLOVENSKÁ TECHNICKÁ UNIVERZITA V BRATISLAVE}
+l.6 ...ENSKÁ TECHNICKÁ UNIVERZITA V BRATISLAVE}}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (70.97183pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 SLOVENSK[]A 
+ []
+
+
+Overfull \hbox (36.69424pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 TECH- 
+ []
+
+
+Overfull \hbox (39.37479pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 NICK[]A 
+ []
+
+
+Overfull \hbox (26.04152pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 UNI- 
+ []
+
+
+Overfull \hbox (51.99971pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 VERZITA 
+ []
+
+
+Overfull \hbox (8.6944pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 V 
+ []
+
+
+Overfull \hbox (73.87459pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/10 BRATISLAVE 
+ []
+
+! Undefined control sequence.
+<argument> {\large 
+                   {}STROJNÍCKA FAKULTA}
+l.7 	\textbf{{\large{}STROJNÍCKA FAKULTA}}
+                                           \textbf{\large{} }\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \large 
+                       
+l.7 ...ge{}STROJNÍCKA FAKULTA}}\textbf{\large{} }
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (76.65236pt too wide) in paragraph at lines 7--7
+ []\OT1/cmr/bx/n/10 STROJN[]ICKA 
+ []
+
+
+Overfull \hbox (54.20802pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/10 FAKULTA 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--17
+[] 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 18.
+
+! Undefined control sequence.
+<recently read> \Large 
+                       
+l.18 ...extsc{\Large{}NÁZOV ZÁVEREČNEJ PRÁCE}}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (41.73589pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 N[]AZOV 
+ []
+
+
+Overfull \hbox (78.9579pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 Z[]AVERE[]CNEJ 
+ []
+
+
+Overfull \hbox (41.04144pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/bx/n/10 PR[]ACE 
+ []
+
+! Undefined control sequence.
+l.19 	\par\end{center}{\Large
+                              \par}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--21
+[] 
+ []
+
+! Undefined control sequence.
+<recently read> \large 
+                       
+l.22 ...árska / Diplomová / Dizertačná práca}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (53.86906pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 Bakalarska 
+ []
+
+
+Overfull \hbox (5.74997pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 / 
+ []
+
+
+Overfull \hbox (31.18039pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 Diplo- 
+ []
+
+
+Overfull \hbox (26.67345pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 mova 
+ []
+
+
+Overfull \hbox (5.74997pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 / 
+ []
+
+
+Overfull \hbox (20.95822pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 Diz- 
+ []
+
+
+Overfull \hbox (37.1595pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 ertacna 
+ []
+
+
+Overfull \hbox (27.41649pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 praca 
+ []
+
+! Undefined control sequence.
+l.23 	\par\end{center}{\large
+                              \par}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--25
+[] 
+ []
+
+! Undefined control sequence.
+l.26 	{\large
+             {}SjF-12345-67890}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+! Undefined control sequence.
+l.27 	\par\end{center}{\large
+                              \par}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \large 
+                       
+l.32 \noindent \textbf{\large{}2018}
+                                     \hfill \textbf{\large{}Bc. Jožko Mrkvi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \large 
+                       
+l.32 ...fill \textbf{\large{}Bc. Jožko Mrkvička}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.99988pt too wide) in paragraph at lines 32--33
+\OT1/cmr/bx/n/10 2018
+ []
+
+
+Overfull \hbox (16.48602pt too wide) in paragraph at lines 32--33
+\OT1/cmr/bx/n/10 Bc.
+ []
+
+
+Overfull \hbox (28.3054pt too wide) in paragraph at lines 32--33
+\OT1/cmr/bx/n/10 Jozko
+ []
+
+
+Overfull \hbox (47.1178pt too wide) in paragraph at lines 32--33
+\OT1/cmr/bx/n/10 Mrkvicka 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \cleardoublepage
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{C:/Users/micha/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
+! Emergency stop.
+<*> ./Obalka.tex
+                
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 29 strings out of 478927
+ 556 string characters out of 2852534
+ 293175 words of memory out of 3000000
+ 17986 multiletter control sequences out of 15000+600000
+ 403738 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,5n,23p,130b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,8 +1,83 @@
-\chapter{Ďalšie kapitoly}
-\label{kap:3}
-Každá kapitola začína na novej strane. Autor rieši zadanú problematiku. Na základe analýzy problému ponúka vlastné riešenia.
+\chapter{R3 hardware}
+\label{kap:2}
+Nasledujúca kapitola je venovaná vyhotoveniu zariadenie z pohľadu hardwaru. Hovorí o častiach, z ktorých sa zariadenie skladá, o ich parametroch, funkciách a vlastnostiach. Taktiež porovnáva poslednú verziu vyhotovenia – verzia R3, so staršími verziami zariadenia, vysvetľuje, prečo sme sa pre dané zmeny rozhodli a ako vplývajú na celkové fungovanie zariadenia. Najskôr sa vyjadruje k mechanickej časti zariadenie a následne, ku použitým komponentom ako je servo motor alebo snímače. 
 
-\section{Podkapitola}
-\label{kap:1.1}
+\section{Schéma zapojenia}
+\label{kap:2.1}
 
-Podkapitoly záverečnej práce majú za úlohu členenie textu práce na dosiahnutie čo naj-väčšej prehľadnosti. Podkapitol môže byť viac, v ich názvoch sa používa desatinné číslovanie. 
+Schéma zapojenia nášho zariadenia prešla od poslednej verzie niekoľkými zmenami. Celkovo by sa dala rozdeliť na 2 oddelené schémy, ktoré sú vzájomne prepojené pomocou FFC (flat flexible cable) káblu. Prvou schémou je časť zariadenia nachádzajúca sa na hlavnej PCB doske, ktorú priamo zapájame do Arduina. Obsahuje kondenzátory a diódu potrebné pre správne fungovanie pripojených komponentov, ďalej kontakty na pripojenie Serva a FFC kábla. Najväčšou zmenou je však implementácia lineárneho regulátora napätia (LDO), ktorý je potrebný pre úpravu napätia do rozsahu, v ktorom môžu naše komponenty fungovať.
+
+Druhá časť schémy je nami navrhnutá breakout doska obsahujúca snímače polohy guličky a pootočenia ramena. Konkrétne ide o ToF (time of flight) snímač VL6180X a gyroskop MPU 6050. Taktiež sa v nej nachádzajú kondenzátory a rezistory a kontakt na pripojenie FFC kábla.
+
+Obe schémy boli navrhnuté vo voľne dostupnom software DIPTrace. 
+ 
+% Obrázky schém + opis 
+% Obrázky PCB dosiek + opis
+ 
+ 
+\section{Komponenty}
+\label{kap:2.2}
+
+Aby naše zariadenie mohlo správne fungovať potrebujeme:
+\begin{itemize}
+	\item snímače – dodajú nášmu programu informácie o aktuálnom stave systému
+	\item aktuátory – časť zariadenia, ktorá zabezpečuje akčný zásah do  systému
+\end{itemize}
+Toto sú základné predpoklady pre možnosť riadenia systému. V našom zariadení sú to:
+\begin{itemize}
+    \item snímače – Tof snímač vzdialenosti, Gyroskop
+	\item aktuátory – Servo motor 
+\end{itemize}
+
+
+\subsection{Servo}
+\label{kap:2.2.1}
+
+\subsection{ToF snímač - VL6180X}
+\label{kap:2.2.2}
+
+Pri snímači vzdialenosti sme sa rozhodli ostať pri pôvodnej voľbe typu a modelu, ktorým je VL6180X. Ide o ToF (Time of Flight) snímač, ktorý presne meria čas, za ktorý svetelný lúč vyslaný zo snímača dorazí k telesu, odrazí sa a vráti späť k snímaču. Na základe tohto času dokáže snímač určiť svoju vzdialenosť od telesa. Komunikácia s arduinom prebieha prostredníctvom I2C protokolu. Snímač je pre naše zadanie momentálne ideálnou možnosťou z ponúk na trhu, z dôvodu:
+\begin{itemize}
+	\item merateľného rozsahu - 100 mm
+	\item presnosti merania - na 1 mm 
+	\item malým rozmerom – 4.8 x 2.8 x 1.0 mm
+\end{itemize}
+Jeho úlohou je snímať polohu guličky v trubičke a dáta posielať mikropočítaču. Poskytuje nám aktuálnu hodnotu vzdialenosti, ktorá sa porovnáva s požadovanou na základe čoho regulátor vypočíta hodnotu akčného zásahu do systému.
+
+\subsection{Gyroskop - MPU 6050}
+\label{kap:2.2.3}
+
+Snímač MPU 6050 je oproti pôvodným verziám zariadenia úplnou novinkou. Ide 6 osový snímač pohybu – 3 osový gyroskop a 3 osový akcelerometer. Jeho využitie je veľmi široké a stretnúť sa s ním môžeme u smartphonov alebo tabletoch. Poskytuje možnosti využívané pri aplikáciách ako navigácia, rozšírená realita, monitorovanie zdravia a pohybu a mnoho ďalších. Komunikácia s arduinom prebieha rovnako ako pri ToF snímači prostredníctvom I2C protokolu. 
+Jeho úlohou je merať uhol natočenia trubičky, aby sme vedeli určiť kedy nachádza v akej polohe. 
+% (toto moc netuším či je správne)
+
+
+\subsection{Lineárny regulátor napätia - LDO}
+\label{kap:2.2.4}
+
+Z dôvodu tvorby vlastného breakoutu pre naše snímače bola potrebná aj implementácia lineárneho regulátora napätia (LDO). Rozsah napätia napájania potrebného pre správne fungovanie snímača VL6180X je 2.6 až 3.0 V. Arduino nám však poskytuje len 2 úrovne napájania a to 5.0 V a 3.3 V. Keďže ani jedna z nich nespadá do daného intervalu na našu hlavnú PCB dosku sme umiestnili lineárny regulátor napätia – STM732M28R, ktorý vstupné napätie v rozsahu od 2.5 do 28 V prevádza na úroveň 2.8 V. Táto hladina vyhovuje aj snímaču MPU 6050, ktorý má rozsah napájania v intervale 2.37 - 3.46 V.  
+
+
+\section{Teleso}
+\label{kap:2.3}
+
+Dôležitou časťou celého systému je práve gulička, pohybujúca sa v trubičke, ktorej polohu sledujeme a riadime. Na náš systém vplýva ako jej hmotnosť a tvar tak aj kvalita a farba jej povrchu. Keďže na meranie polohy guličky používame ToF snímač, ktorý meria vzdialenosť na základe času, za ktorý sa svetelný lúč vyslaný zo senzora odrazí od telesa a vráti naspäť, na kvalitu merania vplývajú aj tieto parametre. Hoci výrobca v datasheetoch uvádza nezávislosť merania snímača od farby alebo kvality povrchu telesa, po našich meraniach sme mohli sledovať odlišnosti v presnosti pre rôzne typy guľôčok. Tento fakt môže byť ovplyvnený práve tvarom meraného telesa, ktorý v našom prípade nie je ideálny, no pre potreby nášho zadania nevyhnutný. Svetelný lúč nedopadá na kolmý povrch, preto nemusí byť odrazený práve pod takým uhlom aby ho dokázal snímač adekvátne zachytiť a zanalyzovať. Na základe tohto faktu sme predpokladali, že by ideálnym riešením bolo teleso s povrchom, ktorý čo najviac rozptýli dopadajúci lúč aby pravdepodobnosť, že sa lúč od neho odrazí k snímaču bola čo najvyššia, čím by sa zlepšila kvalita merania. Ďalšou požiadavkou pri hľadaní ideálneho telesa bola dostatočná hmotnosť guličky aby bol systém dynamický a dokázal aktívne reagovať na zmeny pootočenia ramena. Aby sa gulička mohla voľne pohybovať v trubičke, nič jej nebránilo a tak nevplývalo na systém je potrebné aby bol jej tvar čo najviac podobný tvaru ideálnej gule. Poslednou požiadavkou bola jeho jednoduchá dostupnosť. Keďže sa jedná o open source projekt, je potrebné aby sa každý, kto by mal záujem o zostrojenie nášho zariadenia vedel ku danej guličke bez väčších problémov dostať. 
+
+Z možností dostupných na trhu sme sa rozhodli otestovať náš snímač  pre viacero typov materiálov:
+\begin{itemize}
+	\item drevo
+	\item silikón
+	\item POM - polyoxymetylén
+	\item NBR - butadien-akrilonitrilový kaučuk (syntetická guma)
+	\item NR - prírodná guma
+	\item PP - polypropylén
+\end{itemize}
+Pri meraní sme postupovali ....
+
+%Postup merania, vzorce, na základe čoho sme vyhodnocovali, tabuľka, zhodnotenie merania
+
+
+\section{3D prvky}
+\label{kap:2.4}
+
+Z dôvodu zmeny použitých komponentov, došlo aj k potrebe aktualizácie a úprave 3D prvkov použitých v našom zariadení. 

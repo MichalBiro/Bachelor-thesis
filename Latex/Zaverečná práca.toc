@@ -1,23 +1,26 @@
 \babel@toc {slovak}{}\relax 
 \contentsline {chapter}{Úvod}{1}{}%
-\contentsline {chapter}{\numberline {1}Základné triky v LaTeX}{2}{}%
-\contentsline {section}{\numberline {1.1}Vymenovanie, číslovanie}{2}{}%
-\contentsline {section}{\numberline {1.2}Obrázky}{3}{}%
-\contentsline {subsection}{\numberline {1.2.1}Formát obrázkov}{3}{}%
-\contentsline {subsection}{\numberline {1.2.2}Obrázky z Matlabu}{3}{}%
-\contentsline {section}{\numberline {1.3}Odvolávky na časti práce}{3}{}%
-\contentsline {section}{\numberline {1.4}Matematika}{3}{}%
-\contentsline {section}{\numberline {1.5}Programy, a užívateľské rozhrania}{4}{}%
-\contentsline {subsection}{\numberline {1.5.1}Programy}{4}{}%
-\contentsline {subsection}{\numberline {1.5.2}Užívateľské rozhrania}{4}{}%
-\contentsline {section}{\numberline {1.6}Tabuľky}{4}{}%
-\contentsline {section}{\numberline {1.7}Fyzykálne jednotky}{4}{}%
-\contentsline {section}{\numberline {1.8}Bibliografické citácie}{5}{}%
-\contentsline {section}{\numberline {1.9}Príklad}{5}{}%
-\contentsline {section}{\numberline {1.10}Záležitosti záverečnej práce}{5}{}%
-\contentsline {subsection}{\numberline {1.10.1}Obal}{5}{}%
-\contentsline {subsection}{\numberline {1.10.2}Titulný list}{6}{}%
-\contentsline {chapter}{\numberline {2}Ďalšie kapitoly}{7}{}%
-\contentsline {section}{\numberline {2.1}Podkapitola}{7}{}%
-\contentsline {chapter}{\numberline {3}Záver}{8}{}%
-\contentsline {chapter}{Literat\'{u}ra}{9}{}%
+\contentsline {chapter}{\numberline {1}BoBshield}{2}{}%
+\contentsline {section}{\numberline {1.1}Automationshield}{2}{}%
+\contentsline {section}{\numberline {1.2}Experiment - Gulôčka na tyči}{2}{}%
+\contentsline {section}{\numberline {1.3}Bobshield R2}{2}{}%
+\contentsline {subsection}{\numberline {1.3.1}R2 hardware}{2}{}%
+\contentsline {subsection}{\numberline {1.3.2}R2 software}{2}{}%
+\contentsline {chapter}{\numberline {2}R3 hardware}{3}{}%
+\contentsline {section}{\numberline {2.1}Schéma zapojenia}{3}{}%
+\contentsline {section}{\numberline {2.2}Komponenty}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}Servo}{4}{}%
+\contentsline {subsection}{\numberline {2.2.2}ToF snímač - VL6180X}{4}{}%
+\contentsline {subsection}{\numberline {2.2.3}Gyroskop - MPU 6050}{4}{}%
+\contentsline {subsection}{\numberline {2.2.4}Lineárny regulátor napätia - LDO}{4}{}%
+\contentsline {section}{\numberline {2.3}Teleso}{4}{}%
+\contentsline {section}{\numberline {2.4}3D prvky}{5}{}%
+\contentsline {chapter}{\numberline {3}BoBshield API}{6}{}%
+\contentsline {section}{\numberline {3.1}API pre MATLAB}{6}{}%
+\contentsline {subsection}{\numberline {3.1.1}Tvorba API pre MATLAB}{6}{}%
+\contentsline {subsection}{\numberline {3.1.2}Knižnica pre snímač}{6}{}%
+\contentsline {subsection}{\numberline {3.1.3}Funkcie}{6}{}%
+\contentsline {subsection}{\numberline {3.1.4}Príklady}{6}{}%
+\contentsline {section}{\numberline {3.2}API pre Simulink}{6}{}%
+\contentsline {chapter}{\numberline {4}Záver}{7}{}%
+\contentsline {chapter}{Literat\'{u}ra}{8}{}%
