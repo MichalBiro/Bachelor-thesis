@@ -10,12 +10,14 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{enumerate}
-\usepackage{etoolbox}                       %Problematic URL in reference
+\usepackage{etoolbox}
+\usepackage[table,xcdraw]{xcolor}                       %Problematic URL in reference
 \apptocmd{\sloppy}{\hbadness 10000\relax}{}{}%Removes badness warnings
 %This is to remove warnings resulting by otherwise OK URL's
 \usepackage[hyphens]{url}
 \usepackage{notes}
 
+\usepackage{gensymb}
 
 %This custom command defines how the literal menus look like.
 \newcommand{\gui}[1]{{\emph{#1}}} %Gui commands, icon names, buttons

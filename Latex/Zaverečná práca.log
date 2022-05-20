@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.25)  31 MAR 2022 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.23)  20 MAY 2022 02:07
 entering extended mode
 **"./Zaverečná práca.tex"
 (Zaverečná práca.tex
@@ -206,39 +206,76 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 ) (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count280
-) (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+) (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box53
+\extrarowheight=\dimen164
+\NC@list=\toks25
+\extratabsurround=\skip63
+\backup@length=\skip64
+\ar@cellbox=\box54
+)
+\everycr=\toks26
+\minrowclearance=\skip65
+)
+\rownum=\count281
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/notes\notes.sty
 Package: notes 2002/10/29 v1.0.1 (Duncan Webb)
-\noteskipamount=\skip63
-\textwidth=\dimen163
-\marparsep=\dimen164
-\rulewd=\dimen165
-\ruleht=\dimen166
-\iconwd=\dimen167
-\iconht=\dimen168
-\textwd=\dimen169
-\vframegap=\dimen170
-\hframegap=\dimen171
-\c@notecnt=\count281
-\containerwd=\dimen172
-\textframeht=\dimen173
-\iconframeht=\dimen174
-\containerht=\dimen175
-\notesmargin=\dimen176
-\dbgrulewd=\dimen177
-\dbgruleht=\dimen178
-\iconframe=\box53
-\textframe=\box54
-\iconcontainer=\box55
-\textcontainer=\box56
-\container=\box57
-\notesbox=\box58
-\pageleft=\dimen179
-\notesboxht=\dimen180
-\notebox=\box59
+\noteskipamount=\skip66
+\textwidth=\dimen165
+\marparsep=\dimen166
+\rulewd=\dimen167
+\ruleht=\dimen168
+\iconwd=\dimen169
+\iconht=\dimen170
+\textwd=\dimen171
+\vframegap=\dimen172
+\hframegap=\dimen173
+\c@notecnt=\count282
+\containerwd=\dimen174
+\textframeht=\dimen175
+\iconframeht=\dimen176
+\containerht=\dimen177
+\notesmargin=\dimen178
+\dbgrulewd=\dimen179
+\dbgruleht=\dimen180
+\iconframe=\box55
+\textframe=\box56
+\iconcontainer=\box57
+\textcontainer=\box58
+\container=\box59
+\notesbox=\box60
+\pageleft=\dimen181
+\notesboxht=\dimen182
+\notebox=\box61
+)
+(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -249,116 +286,109 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count282
-\Gm@cntv=\count283
-\c@Gm@tempcnt=\count284
-\Gm@bindingoffset=\dimen181
-\Gm@wd@mp=\dimen182
-\Gm@odd@mp=\dimen183
-\Gm@even@mp=\dimen184
-\Gm@layoutwidth=\dimen185
-\Gm@layoutheight=\dimen186
-\Gm@layouthoffset=\dimen187
-\Gm@layoutvoffset=\dimen188
-\Gm@dimlist=\toks25
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen183
+\Gm@wd@mp=\dimen184
+\Gm@odd@mp=\dimen185
+\Gm@even@mp=\dimen186
+\Gm@layoutwidth=\dimen187
+\Gm@layoutheight=\dimen188
+\Gm@layouthoffset=\dimen189
+\Gm@layoutvoffset=\dimen190
+\Gm@dimlist=\toks27
 
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box60
-\beforetitleunit=\skip64
-\aftertitleunit=\skip65
-\ttl@plus=\dimen189
-\ttl@minus=\dimen190
-\ttl@toksa=\toks26
-\titlewidth=\dimen191
-\titlewidthlast=\dimen192
-\titlewidthfirst=\dimen193
+\ttl@box=\box62
+\beforetitleunit=\skip67
+\aftertitleunit=\skip68
+\ttl@plus=\dimen191
+\ttl@minus=\dimen192
+\ttl@toksa=\toks28
+\titlewidth=\dimen193
+\titlewidthlast=\dimen194
+\titlewidthfirst=\dimen195
 )
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks27
-\thm@bodyfont=\toks28
-\thm@headfont=\toks29
-\thm@notefont=\toks30
-\thm@headpunct=\toks31
-\thm@preskip=\skip66
-\thm@postskip=\skip67
-\thm@headsep=\skip68
-\dth@everypar=\toks32
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip69
+\thm@postskip=\skip70
+\thm@headsep=\skip71
+\dth@everypar=\toks34
 )
-\c@exmp=\count285
+\c@exmp=\count286
 
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count286
-\lst@gtempboxa=\box61
-\lst@token=\toks33
-\lst@length=\count287
-\lst@currlwidth=\dimen194
-\lst@column=\count288
-\lst@pos=\count289
-\lst@lostspace=\dimen195
-\lst@width=\dimen196
-\lst@newlines=\count290
-\lst@lineno=\count291
-\lst@maxwidth=\dimen197
+\lst@mode=\count287
+\lst@gtempboxa=\box63
+\lst@token=\toks35
+\lst@length=\count288
+\lst@currlwidth=\dimen196
+\lst@column=\count289
+\lst@pos=\count290
+\lst@lostspace=\dimen197
+\lst@width=\dimen198
+\lst@newlines=\count291
+\lst@lineno=\count292
+\lst@maxwidth=\dimen199
 
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count292
-\lst@skipnumbers=\count293
-\lst@framebox=\box62
+\c@lstnumber=\count293
+\lst@skipnumbers=\count294
+\lst@framebox=\box64
 )
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
 
-(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-)
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count294
-\l__pdf_internal_box=\box63
+\l__color_backend_stack_int=\count295
+\l__pdf_internal_box=\box65
 ) (Zaverečná práca.aux (Uvod.aux) (Kapitola1.aux) (Kapitola2.aux)
 (Kapitola3.aux) (Zaver.aux))
 \openout1 = `"Zaverečná práca.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count295
-\scratchdimen=\dimen198
-\scratchbox=\box64
-\nofMPsegments=\count296
-\nofMParguments=\count297
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count298
-\MPscratchDim=\dimen199
-\MPnumerator=\count299
-\makeMPintoPDFobject=\count300
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count296
+\scratchdimen=\dimen256
+\scratchbox=\box66
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen257
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks37
 )
 (C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -370,6 +400,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+LaTeX Info: Redefining \celsius on input line 69.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 69.
+
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 69.
+Package gensymb Info: Using \Omega for \ohm on input line 69.
+
+Package gensymb Warning: Not defining \micro.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -404,7 +446,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count301
+\c@lstlisting=\count302
 (Obalka.tex [1
 
 {C:/Users/micha/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
@@ -466,27 +508,107 @@ Kapitola 1.
 
  (Kapitola2.tex
 Kapitola 2.
+<obr/BoBshield.png, id=40, 5015.73875pt x 2194.1975pt>
+File: obr/BoBshield.png Graphic file (type png)
+<use obr/BoBshield.png>
+Package pdftex.def Info: obr/BoBshield.png  used on input line 11.
+(pdftex.def)             Requested size: 426.79134pt x 186.68846pt.
 [3
 
 
 
 
-] [4]) [5]
+ <./obr/BoBshield.png (PNG copy)>]
+<obr/senzors.png, id=44, 3495.0575pt x 2523.4275pt>
+File: obr/senzors.png Graphic file (type png)
+<use obr/senzors.png>
+Package pdftex.def Info: obr/senzors.png  used on input line 19.
+(pdftex.def)             Requested size: 284.52756pt x 205.42073pt.
+ [4 <./obr/senzors.png (PNG copy)>]
+Package epstopdf Info: Source file: <obr/ToF.eps>
+(epstopdf)                    date: 2022-05-20 01:48:37
+(epstopdf)                    size: 32098 bytes
+(epstopdf)             Output file: <obr/ToF-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 01:49:12
+(epstopdf)                    size: 11082 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/ToF-eps-converte
+d-to.pdf obr/ToF.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/ToF-eps-converted-to.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/ToF-eps-converted-to.pdf, id=49, 283.0575pt x 413.545pt>
+File: obr/ToF-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/ToF-eps-converted-to.pdf>
+Package pdftex.def Info: obr/ToF-eps-converted-to.pdf  used on input line 55.
+(pdftex.def)             Requested size: 170.71652pt x 249.42249pt.
+[5 <./obr/ToF-eps-converted-to.pdf>] [6] [7] [8]
+Package epstopdf Info: Source file: <obr/prevod.eps>
+(epstopdf)                    date: 2022-05-20 01:17:54
+(epstopdf)                    size: 76443 bytes
+(epstopdf)             Output file: <obr/prevod-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-20 01:18:02
+(epstopdf)                    size: 22588 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/prevod-eps-conve
+rted-to.pdf obr/prevod.eps>
+(epstopdf)             \includegraphics on input line 148.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/prevod-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/prevod-eps-converted-to.pdf, id=75, 181.67876pt x 171.64125pt>
+File: obr/prevod-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/prevod-eps-converted-to.pdf>
+Package pdftex.def Info: obr/prevod-eps-converted-to.pdf  used on input line 14
+8.
+(pdftex.def)             Requested size: 142.26378pt x 134.40604pt.
+
+Overfull \hbox (11.50565pt too wide) in paragraph at lines 157--160
+\T1/cmr/m/n/12 Na z�-klade pre-vo-do-v�ho po-meru vieme po-ve-da�, �e na 1\TS1/
+cmr/m/n/12 �\T1/cmr/m/n/12 oto�enia serva pri-sl�-cha 0,2\TS1/cmr/m/n/12 �\T1/c
+mr/m/n/12 oto�enia
+ []
+
+) [9 <./obr/prevod-eps-converted-to.pdf>]
 \openout2 = `Kapitola3.aux'.
 
  (Kapitola3.tex
 Kapitola 3.
-) [6
+[10
 
 
 
 
 ]
+Package epstopdf Info: Source file: <obr/Filtracia.eps>
+(epstopdf)                    date: 2022-05-19 18:08:13
+(epstopdf)                    size: 34208 bytes
+(epstopdf)             Output file: <obr/Filtracia-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-19 18:08:31
+(epstopdf)                    size: 13147 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/Filtracia-eps-co
+nverted-to.pdf obr/Filtracia.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/Filtracia-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/Filtracia-eps-converted-to.pdf, id=98, 1156.32pt x 564.1075pt>
+File: obr/Filtracia-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/Filtracia-eps-converted-to.pdf>
+Package pdftex.def Info: obr/Filtracia-eps-converted-to.pdf  used on input line
+ 49.
+(pdftex.def)             Requested size: 398.33858pt x 194.32463pt.
+[11 <./obr/Filtracia-eps-converted-to.pdf>]) [12]
 \openout2 = `Zaver.aux'.
 
  (Zaver.tex
 Kapitola 4.
-) [7
+) [13
 
 
 
@@ -495,20 +617,20 @@ Kapitola 4.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [8
+) [14
 
 
 
 ] (Zaverečná práca.aux (Uvod.aux) (Kapitola1.aux) (Kapitola2.aux)
 (Kapitola3.aux) (Zaver.aux)) ) 
 Here is how much of TeX's memory you used:
- 6944 strings out of 478927
- 104025 string characters out of 2852534
- 438301 words of memory out of 3000000
- 24649 multiletter control sequences out of 15000+600000
+ 7593 strings out of 478927
+ 112199 string characters out of 2852535
+ 457371 words of memory out of 3000000
+ 25277 multiletter control sequences out of 15000+600000
  416261 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,9n,80p,1888b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,10n,80p,1903b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/lj
 four/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts
 /pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\micha\AppData\Local\MiKTeX
@@ -517,10 +639,18 @@ MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\micha\AppData\
 Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\micha\Ap
 pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\mi
 cha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk> <C:\Us
-ers\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk>
-Output written on "Zaverečná práca.pdf" (16 pages, 143847 bytes).
+ers\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><
+C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/micha/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/micha/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Zaverečná práca.pdf" (22 pages, 531289 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
+ 495 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
