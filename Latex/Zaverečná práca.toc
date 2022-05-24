@@ -1,30 +1,26 @@
 \babel@toc {slovak}{}\relax 
 \contentsline {chapter}{Úvod}{1}{}%
-\contentsline {chapter}{\numberline {1}BoBshield}{2}{}%
-\contentsline {section}{\numberline {1.1}Automationshield}{2}{}%
-\contentsline {section}{\numberline {1.2}Experiment - Gulôčka na tyči}{2}{}%
-\contentsline {section}{\numberline {1.3}Bobshield R2}{2}{}%
-\contentsline {subsection}{\numberline {1.3.1}R2 hardvér}{2}{}%
-\contentsline {subsection}{\numberline {1.3.2}R2 softvér}{2}{}%
-\contentsline {chapter}{\numberline {2}R3 hardvér}{3}{}%
-\contentsline {section}{\numberline {2.1}Schéma zapojenia}{3}{}%
-\contentsline {section}{\numberline {2.2}Komponenty}{4}{}%
-\contentsline {subsection}{\numberline {2.2.1}Servo}{4}{}%
-\contentsline {subsection}{\numberline {2.2.2}ToF snímač - VL6180X}{4}{}%
-\contentsline {subsection}{\numberline {2.2.3}Gyroskop - MPU 6050}{6}{}%
-\contentsline {subsection}{\numberline {2.2.4}Lineárny regulátor napätia - LDO}{6}{}%
-\contentsline {section}{\numberline {2.3}Teleso}{6}{}%
-\contentsline {section}{\numberline {2.4}Prevod rotačného pohybu - servo, trubička}{8}{}%
-\contentsline {section}{\numberline {2.5}3D prvky}{9}{}%
-\contentsline {chapter}{\numberline {3}BoBshield API}{10}{}%
-\contentsline {section}{\numberline {3.1}API pre MATLAB}{10}{}%
-\contentsline {subsection}{\numberline {3.1.1}Tvorba API pre MATLAB}{10}{}%
-\contentsline {subsection}{\numberline {3.1.2}Knižnica pre snímač}{10}{}%
-\contentsline {subsection}{\numberline {3.1.3}Funkcie}{10}{}%
-\contentsline {subsection}{\numberline {3.1.4}Príklady}{10}{}%
-\contentsline {section}{\numberline {3.2}API pre Simulink}{10}{}%
-\contentsline {subsection}{\numberline {3.2.1}Knižnica}{10}{}%
-\contentsline {subsection}{\numberline {3.2.2}Príklady}{10}{}%
-\contentsline {section}{\numberline {3.3}API pre Arduino IDE}{10}{}%
-\contentsline {chapter}{\numberline {4}Záver}{13}{}%
-\contentsline {chapter}{Literat\'{u}ra}{14}{}%
+\contentsline {chapter}{\numberline {1}BOBShield}{2}{}%
+\contentsline {section}{\numberline {1.1}AutomationShield}{2}{}%
+\contentsline {section}{\numberline {1.2}Experiment - Gulôčka na tyči}{3}{}%
+\contentsline {section}{\numberline {1.3}Bobshield R2}{3}{}%
+\contentsline {subsection}{\numberline {1.3.1}R2 hardvér}{3}{}%
+\contentsline {subsection}{\numberline {1.3.2}R2 softvér}{3}{}%
+\contentsline {chapter}{\numberline {2}R3 hardvér}{4}{}%
+\contentsline {section}{\numberline {2.1}Schéma zapojenia}{4}{}%
+\contentsline {section}{\numberline {2.2}Komponenty}{6}{}%
+\contentsline {subsection}{\numberline {2.2.1}Servo}{8}{}%
+\contentsline {subsection}{\numberline {2.2.2}ToF snímač - VL6180X}{10}{}%
+\contentsline {subsection}{\numberline {2.2.3}Gyroskop - MPU 6050}{11}{}%
+\contentsline {subsection}{\numberline {2.2.4}Lineárny regulátor napätia - LDO}{12}{}%
+\contentsline {section}{\numberline {2.3}Teleso}{13}{}%
+\contentsline {section}{\numberline {2.4}Prevod rotačného pohybu - servo, trubička}{15}{}%
+\contentsline {section}{\numberline {2.5}3D prvky}{17}{}%
+\contentsline {chapter}{\numberline {3}BoBshield API}{21}{}%
+\contentsline {section}{\numberline {3.1}API pre Simulink}{21}{}%
+\contentsline {subsection}{\numberline {3.1.1}Knižnica}{21}{}%
+\contentsline {subsection}{\numberline {3.1.2}Príklady}{23}{}%
+\contentsline {section}{\numberline {3.2}API pre Arduino IDE}{23}{}%
+\contentsline {subsection}{\numberline {3.2.1}Filtrácia}{23}{}%
+\contentsline {chapter}{\numberline {4}Záver}{27}{}%
+\contentsline {chapter}{Literat\'{u}ra}{28}{}%
