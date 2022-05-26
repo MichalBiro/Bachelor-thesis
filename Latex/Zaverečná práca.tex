@@ -28,7 +28,7 @@
 \newcommand{\angl}[1]{{\footnote{\emph{angl.}\ {#1}}}} %Shorthand english equivalent
 
 
-\usepackage[left=25mm,right=25mm,top=25mm,bottom=25mm,paperwidth=210mm,paperheight=297mm,includehead]{geometry}
+\usepackage[left=35mm,right=35mm,top=25mm,bottom=25mm,paperwidth=210mm,paperheight=297mm,includehead]{geometry}
 \linespread{1}
 
 \usepackage{titlesec}
@@ -76,7 +76,6 @@
 	\input{Prehlasenie}
 	\input{Podakovanie}
 	\input{Abstrakt}
-	\input{Predhovor}
 	\tableofcontents
 	\thispagestyle{empty}
 	\cleardoublepage
@@ -96,6 +95,55 @@
 	%%%%%%% Koniec %%%%%%%%
 	\bibliographystyle{abbrv}
 	\addcontentsline{toc}{chapter}{Literat\'{u}ra}
-	\bibliography{bibliog}
-
+	\bibliography{bibliog.bib}
+	
+	\begin{thebibliography}{10}
+	\bibitem{VL6180X}
+	\textbf{STMicroelectronics}, \textit{VL6180X - Proximity and ambient light sensing module} [online], 2016, [cit 2022-4-21] Dostupné z: \url{https://www.st.com/resource/en/datasheet/vl6180x.pdf } 
+	
+	\bibitem{MPU6050}
+	\textbf{InvenSense Inc.}, \textit{MPU-6000 and MPU-6050 Product Specification Revision 3.4} [online], 2013 [cit. 2022-4-21] Dostupné z:
+	\url{https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf}
+	
+	\bibitem{LDO}
+	\textbf{STMicroelectronics}, \textit{ST732 Datasheet} [online], 2021 [cit. 2022-4-28] Dostupné z:
+	\url{https://www.mouser.sk/ProductDetail/STMicroelectronics/ST732M28R?qs=MLItCLRbWsxtXiiWQqtIMw%3D%3D}
+	
+	\bibitem{Anicka}
+	\textbf{A. Vargová}, \textit{BoBShield: a miniature "ball on beam" experiment}, Slovenská technická univerzita v Bratislave, Strojnícka fakulta, 2021, Bratislava, Slovenská republika
+	
+	
+	\bibitem{BOBexperiment}
+	\textbf{CTMS - Control tutorials for MATLAB and SIMULINK}, \textit{Ball and Beam: System Modeling} [online], [cit. 2022-5-12] Dostupné z:
+	\url{https://github.com/gergelytakacs/AutomationShield/wiki/BoBShield}
+	
+	
+	\bibitem{Autoshield}
+	\textbf{G. Takacs}, \textit{BOBShield} [online], [cit. 2022-4-22] Dostupné z:
+	\url{https://www.hennlich.sk/fileadmin/user_upload/sk_gufer%C3%A1_-_preh%C4%BEad_profilov.pdf}
+	
+	
+	\bibitem{Servo}
+	\textbf{ISL Products International Ltd.}, \textit{Servo Motor Fundamentals} [online]. [cit. 2022-5-20] Dostupné z:
+	\url{https://islproducts.com/design-note/servo-motor-fundamentals/}
+	
+	\bibitem{Servo-stare}
+	\textbf{DFROBOT}, \textit{9g Metal Gear Micro Servo (1,8Kg)} [online]. [cit. 2022-4-22] Dostupné z:
+	\url{https://www.dfrobot.com/product-1338.html}
+	
+	\bibitem{Servo-nove}
+	\textbf{SAVOX-SERVO}, \textit{Savox - Servo - SH-0253 - Digital - DC - Motor } [online]. [cit. 2022-5-22] Dostupné z:
+	\url{https://www.savox-servo.com/Servos-c-1338/Brushed-Motor-c-1340/Savox-Servo-SH-0253-Digital-DC-Motor/}
+	
+	
+	\bibitem{MPUfoto}
+	\textbf{MOUSER Electronics}, \textit{MPU-6050} [online]. [cit. 2022-5-12] Dostupné z:
+	\url{https://www.mouser.sk/ProductDetail/TDK-InvenSense/MPU-6050?qs=u4fy%2FsgLU9O14B5JgyQFvg%3D%3D}
+	
+	\bibitem{Priemer}
+	\textbf{MathWorks}, \textit{Sliding Window Method and Exponetial Weigthing Method} [online]. [cit. 2022-5-22] Dostupné z:
+	\url{https://www.mathworks.com/help/dsp/ug/sliding-window-method-and-exponential-weighting-method.html}
+	
+	
+\end{thebibliography}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.23)  24 MAY 2022 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.23)  26 MAY 2022 12:37
 entering extended mode
 **"./Zavereƒçn√° pr√°ca.tex"
 (Zavereƒçn√° pr√°ca.tex
@@ -494,7 +494,17 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box67
 ) (Zavereƒçn√° pr√°ca.aux (Uvod.aux) (Kapitola1.aux) (Kapitola2.aux)
-(Kapitola3.aux) (Zaver.aux))
+(Kapitola3.aux) (Zaver.aux)
+
+LaTeX Warning: Label `VL6180X' multiply defined.
+
+
+LaTeX Warning: Label `MPU6050' multiply defined.
+
+
+LaTeX Warning: Label `LDO' multiply defined.
+
+)
 \openout1 = `"Zavereƒçn√° pr√°ca.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -557,14 +567,14 @@ Package gensymb Warning: Not defining \micro.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* h-part:(L,W,R)=(99.58464pt, 398.3386pt, 99.58464pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
+* \textwidth=398.3386pt
 * \textheight=670.90929pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
 * \topmargin=-1.1381pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
@@ -587,7 +597,12 @@ Package gensymb Warning: Not defining \micro.
 (Obalka.tex [1
 
 {C:/Users/micha/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
-(Titul.tex [2
+(Titul.tex
+Overfull \hbox (34.49924pt too wide) in paragraph at lines 30--37
+[]$  
+ []
+
+[2
 
 ]) (Zadanie.tex [3
 
@@ -612,28 +627,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
 [6
 
-]) (Predhovor.tex [7
-
-
 ]) (Zavereƒçn√° pr√°ca.toc)
 \tf@toc=\write4
 \openout4 = `"Zavereƒçn√° pr√°ca.toc"'.
 
- [8
+ [7
 
 
 ]
 \openout2 = `Uvod.aux'.
 
- (Uvod.tex) [1
+ (Uvod.tex
+Overfull \hbox (3.28265pt too wide) in paragraph at lines 8--9
+[]\T1/cmr/m/n/12 AutomationShield so svo-jimi za-ria-de-niami pri-n·≤a jed-no-d
+u-chÈ rie-≤e-nie tohto
+ []
+
+) [1
 
 
 
 ]
 \openout2 = `Kapitola1.aux'.
 
-
-(Kapitola1.tex
+ (Kapitola1.tex
 Kapitola 1.
 [2
 
@@ -655,13 +672,47 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/experimentBOB-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/experimentBOB-eps-converted-to.pdf, id=43, 128.48pt x 99.37125pt>
+<obr/experimentBOB-eps-converted-to.pdf, id=40, 128.48pt x 99.37125pt>
 File: obr/experimentBOB-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/experimentBOB-eps-converted-to.pdf>
 Package pdftex.def Info: obr/experimentBOB-eps-converted-to.pdf  used on input 
 line 19.
 (pdftex.def)             Requested size: 227.62204pt x 176.06601pt.
-) [3 <./obr/experimentBOB-eps-converted-to.pdf>]
+[3 <./obr/experimentBOB-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <obr/R1.eps>
+(epstopdf)                    date: 2022-05-26 08:18:10
+(epstopdf)                    size: 589340 bytes
+(epstopdf)             Output file: <obr/R1-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-26 08:20:33
+(epstopdf)                    size: 119799 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/R1-eps-converted
+-to.pdf obr/R1.eps>
+(epstopdf)             \includegraphics on input line 33.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/R1-eps-converted-to.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/R1-eps-converted-to.pdf, id=52, 683.55376pt x 333.245pt>
+File: obr/R1-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/R1-eps-converted-to.pdf>
+Package pdftex.def Info: obr/R1-eps-converted-to.pdf  used on input line 33.
+(pdftex.def)             Requested size: 227.62204pt x 110.96782pt.
+Package epstopdf Info: Source file: <obr/R1.eps>
+(epstopdf)                    date: 2022-05-26 08:18:10
+(epstopdf)                    size: 589340 bytes
+(epstopdf)             Output file: <obr/R1-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-26 08:20:33
+(epstopdf)                    size: 119799 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/R1-eps-converted
+-to.pdf obr/R1.eps>
+(epstopdf)             \includegraphics on input line 41.
+Package epstopdf Info: Output file is already uptodate.
+File: obr/R1-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/R1-eps-converted-to.pdf>
+Package pdftex.def Info: obr/R1-eps-converted-to.pdf  used on input line 41.
+(pdftex.def)             Requested size: 227.62204pt x 110.96782pt.
+[4 <./obr/R1-eps-converted-to.pdf>]) [5]
 \openout2 = `Kapitola2.aux'.
 
  (Kapitola2.tex
@@ -684,13 +735,18 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/BoBshield-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/BoBshield-eps-converted-to.pdf, id=55, 3762.055pt x 1646.15pt>
+<obr/BoBshield-eps-converted-to.pdf, id=66, 3762.055pt x 1646.15pt>
 File: obr/BoBshield-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/BoBshield-eps-converted-to.pdf>
 Package pdftex.def Info: obr/BoBshield-eps-converted-to.pdf  used on input line
  11.
 (pdftex.def)             Requested size: 426.79134pt x 186.72865pt.
-[4
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+[6
 
 
 
@@ -714,13 +770,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/senzors-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/senzors-eps-converted-to.pdf, id=59, 2621.795pt x 1874.00125pt>
+<obr/senzors-eps-converted-to.pdf, id=71, 2621.795pt x 1874.00125pt>
 File: obr/senzors-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/senzors-eps-converted-to.pdf>
 Package pdftex.def Info: obr/senzors-eps-converted-to.pdf  used on input line 1
 8.
 (pdftex.def)             Requested size: 284.52756pt x 203.36707pt.
-[5 <./obr/BoBshield-eps-converted-to.pdf> <./obr/senzors-eps-converted-to.pdf>]
+[7 <./obr/BoBshield-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <obr/PCBBOBup.eps>
 (epstopdf)                    date: 2022-05-23 00:11:20
 (epstopdf)                    size: 192365 bytes
@@ -735,7 +791,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/PCBBOBup-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/PCBBOBup-eps-converted-to.pdf, id=78, 2048.65375pt x 1732.4725pt>
+<obr/PCBBOBup-eps-converted-to.pdf, id=82, 2048.65375pt x 1732.4725pt>
 File: obr/PCBBOBup-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/PCBBOBup-eps-converted-to.pdf>
 Package pdftex.def Info: obr/PCBBOBup-eps-converted-to.pdf  used on input line 
@@ -755,7 +811,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/PCBBOBbottom-eps-converted-to.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/PCBBOBbottom-eps-converted-to.pdf, id=79, 2048.65375pt x 1726.45pt>
+<obr/PCBBOBbottom-eps-converted-to.pdf, id=83, 2048.65375pt x 1726.45pt>
 File: obr/PCBBOBbottom-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/PCBBOBbottom-eps-converted-to.pdf>
 Package pdftex.def Info: obr/PCBBOBbottom-eps-converted-to.pdf  used on input l
@@ -775,7 +831,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/PCBsnimace-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/PCBsnimace-eps-converted-to.pdf, id=80, 3651.6425pt x 1577.895pt>
+<obr/PCBsnimace-eps-converted-to.pdf, id=84, 3651.6425pt x 1577.895pt>
 File: obr/PCBsnimace-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/PCBsnimace-eps-converted-to.pdf>
 Package pdftex.def Info: obr/PCBsnimace-eps-converted-to.pdf  used on input lin
@@ -784,8 +840,9 @@ e 45.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7 <./obr/PCBBOBup-eps-converted-to.pdf> <./obr/PCBBOBbottom-eps-converted-
-to.pdf>] [8 <./obr/PCBsnimace-eps-converted-to.pdf>]
+[8 <./obr/senzors-eps-converted-to.pdf>] [9 <./obr/PCBBOBup-eps-converted-to.pd
+f> <./obr/PCBBOBbottom-eps-converted-to.pdf>] [10 <./obr/PCBsnimace-eps-convert
+ed-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 83.
@@ -804,13 +861,18 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/PWMsignal-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/PWMsignal-eps-converted-to.pdf, id=113, 623.32875pt x 255.95625pt>
+<obr/PWMsignal-eps-converted-to.pdf, id=124, 623.32875pt x 255.95625pt>
 File: obr/PWMsignal-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/PWMsignal-eps-converted-to.pdf>
 Package pdftex.def Info: obr/PWMsignal-eps-converted-to.pdf  used on input line
  85.
 (pdftex.def)             Requested size: 455.24408pt x 186.94023pt.
-[9 <./obr/PWMsignal-eps-converted-to.pdf>]
+
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 85--86
+ [][] 
+ []
+
+[11]
 Package epstopdf Info: Source file: <obr/ToF.eps>
 (epstopdf)                    date: 2022-05-20 02:07:57
 (epstopdf)                    size: 32099 bytes
@@ -830,10 +892,10 @@ File: obr/ToF-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/ToF-eps-converted-to.pdf>
 Package pdftex.def Info: obr/ToF-eps-converted-to.pdf  used on input line 117.
 (pdftex.def)             Requested size: 170.71652pt x 249.42249pt.
-[10 <./obr/ToF-eps-converted-to.pdf>]
 
-LaTeX Warning: Citation `VL6180X' on page 11 undefined on input line 125.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[12 <./obr/PWMsignal-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 130.
@@ -852,15 +914,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/VL6180X-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/VL6180X-eps-converted-to.pdf, id=143, 362.35374pt x 195.73125pt>
+<obr/VL6180X-eps-converted-to.pdf, id=146, 362.35374pt x 195.73125pt>
 File: obr/VL6180X-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/VL6180X-eps-converted-to.pdf>
 Package pdftex.def Info: obr/VL6180X-eps-converted-to.pdf  used on input line 1
 32.
 (pdftex.def)             Requested size: 170.71652pt x 92.21469pt.
-
-LaTeX Warning: Citation `VL6180X' on page 11 undefined on input line 133.
-
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 136.
@@ -879,19 +938,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/VL6180Xscheme-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/VL6180Xscheme-eps-converted-to.pdf, id=144, 791.95876pt x 439.6425pt>
+<obr/VL6180Xscheme-eps-converted-to.pdf, id=147, 791.95876pt x 439.6425pt>
 File: obr/VL6180Xscheme-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/VL6180Xscheme-eps-converted-to.pdf>
 Package pdftex.def Info: obr/VL6180Xscheme-eps-converted-to.pdf  used on input 
 line 138.
 (pdftex.def)             Requested size: 369.88582pt x 205.33728pt.
-
-LaTeX Warning: Citation `VL6180X' on page 11 undefined on input line 139.
-
-
-LaTeX Warning: Citation `MPU6050' on page 11 undefined on input line 145.
-
-[11 <./obr/VL6180X-eps-converted-to.pdf>]
+[13 <./obr/ToF-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 149.
@@ -910,19 +963,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/MPU6050-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/MPU6050-eps-converted-to.pdf, id=152, 195.73125pt x 138.5175pt>
+<obr/MPU6050-eps-converted-to.pdf, id=160, 195.73125pt x 138.5175pt>
 File: obr/MPU6050-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/MPU6050-eps-converted-to.pdf>
 Package pdftex.def Info: obr/MPU6050-eps-converted-to.pdf  used on input line 1
 51.
 (pdftex.def)             Requested size: 170.71652pt x 120.82205pt.
-
-LaTeX Warning: Citation `VL6180X' on page 12 undefined on input line 159.
-
-
-LaTeX Warning: Citation `MPU6050' on page 12 undefined on input line 159.
-
-[12 <./obr/VL6180Xscheme-eps-converted-to.pdf> <./obr/MPU6050-eps-converted-to.
+[14 <./obr/VL6180X-eps-converted-to.pdf> <./obr/VL6180Xscheme-eps-converted-to.
 pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
@@ -942,18 +989,14 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/LDOscheme-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/LDOscheme-eps-converted-to.pdf, id=162, 760.8425pt x 395.4775pt>
+<obr/LDOscheme-eps-converted-to.pdf, id=170, 760.8425pt x 395.4775pt>
 File: obr/LDOscheme-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/LDOscheme-eps-converted-to.pdf>
 Package pdftex.def Info: obr/LDOscheme-eps-converted-to.pdf  used on input line
  163.
 (pdftex.def)             Requested size: 284.52756pt x 147.89938pt.
-
-LaTeX Warning: Citation `LDO' on page 13 undefined on input line 164.
-
-
-LaTeX Warning: Citation `VL6180X' on page 13 undefined on input line 172.
-
+[15 <./obr/MPU6050-eps-converted-to.pdf> <./obr/LDOscheme-eps-converted-to.pdf>
+]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 175.
@@ -972,17 +1015,29 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/TOFreflectance-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/TOFreflectance-eps-converted-to.pdf, id=163, 709.65125pt x 474.77374pt>
+<obr/TOFreflectance-eps-converted-to.pdf, id=180, 709.65125pt x 474.77374pt>
 File: obr/TOFreflectance-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/TOFreflectance-eps-converted-to.pdf>
 Package pdftex.def Info: obr/TOFreflectance-eps-converted-to.pdf  used on input
  line 177.
 (pdftex.def)             Requested size: 284.52756pt x 190.35529pt.
 
-LaTeX Warning: Citation `VL6180X' on page 13 undefined on input line 178.
+Overfull \hbox (11.72466pt too wide) in paragraph at lines 182--184
+\T1/cmr/m/n/12 via-cero ty-pov ma-te-ri·-lov: drevo, si-li-kÛn, POM - po-ly-o-x
+y-me-ty-lÈn, NBR - butadien-
+ []
 
-[13 <./obr/LDOscheme-eps-converted-to.pdf> <./obr/TOFreflectance-eps-converted-
-to.pdf>] [14] [15]
+[16 <./obr/TOFreflectance-eps-converted-to.pdf>]
+Overfull \hbox (42.80762pt too wide) in paragraph at lines 195--200
+ [][] 
+ []
+
+
+Overfull \hbox (15.80241pt too wide) in paragraph at lines 209--214
+ [][] 
+ []
+
+[17] [18]
 Package epstopdf Info: Source file: <obr/prevod.eps>
 (epstopdf)                    date: 2022-05-21 21:40:30
 (epstopdf)                    size: 55557 bytes
@@ -997,26 +1052,24 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/prevod-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/prevod-eps-converted-to.pdf, id=183, 306.14375pt x 538.01pt>
+<obr/prevod-eps-converted-to.pdf, id=198, 306.14375pt x 538.01pt>
 File: obr/prevod-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/prevod-eps-converted-to.pdf>
 Package pdftex.def Info: obr/prevod-eps-converted-to.pdf  used on input line 24
 5.
 (pdftex.def)             Requested size: 142.26378pt x 250.00787pt.
-
-Overfull \hbox (11.50565pt too wide) in paragraph at lines 254--257
-\T1/cmr/m/n/12 Na z·-klade pre-vo-do-vÈho po-meru vieme po-ve-da¥, ∫e na 1\TS1/
-cmr/m/n/12 ∞\T1/cmr/m/n/12 oto£enia serva pri-sl˙-cha 0,2\TS1/cmr/m/n/12 ∞\T1/c
-mr/m/n/12 oto£enia
- []
-
-[16 <./obr/prevod-eps-converted-to.pdf>]
-<obr/3Dmodel.png, id=196, 1927.2pt x 1084.05pt>
+[19 <./obr/prevod-eps-converted-to.pdf>]
+<obr/3Dmodel.png, id=211, 1927.2pt x 1084.05pt>
 File: obr/3Dmodel.png Graphic file (type png)
 <use obr/3Dmodel.png>
 Package pdftex.def Info: obr/3Dmodel.png  used on input line 269.
 (pdftex.def)             Requested size: 426.79134pt x 240.06316pt.
- [17 <./obr/3Dmodel.png>]
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 269--270
+ [][] 
+ []
+
+[20 <./obr/3Dmodel.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 277.
@@ -1035,21 +1088,27 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/3Dbase-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/3Dbase-eps-converted-to.pdf, id=203, 569.12625pt x 278.03876pt>
+<obr/3Dbase-eps-converted-to.pdf, id=217, 569.12625pt x 278.03876pt>
 File: obr/3Dbase-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/3Dbase-eps-converted-to.pdf>
 Package pdftex.def Info: obr/3Dbase-eps-converted-to.pdf  used on input line 27
 9.
 (pdftex.def)             Requested size: 426.79134pt x 208.51158pt.
 
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 279--280
+ [][] 
+ []
+
+
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 283.
 
-<obr/3Dprvok2.png, id=204, 3513.125pt x 1973.3725pt>
+<obr/3Dprvok2.png, id=218, 3513.125pt x 1973.3725pt>
 File: obr/3Dprvok2.png Graphic file (type png)
 <use obr/3Dprvok2.png>
 Package pdftex.def Info: obr/3Dprvok2.png  used on input line 285.
 (pdftex.def)             Requested size: 199.16928pt x 111.8631pt.
+[21 <./obr/3Dbase-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 291.
@@ -1068,13 +1127,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/3Ddrziak-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/3Ddrziak-eps-converted-to.pdf, id=205, 569.12625pt x 306.14375pt>
+<obr/3Ddrziak-eps-converted-to.pdf, id=229, 569.12625pt x 306.14375pt>
 File: obr/3Ddrziak-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/3Ddrziak-eps-converted-to.pdf>
 Package pdftex.def Info: obr/3Ddrziak-eps-converted-to.pdf  used on input line 
 293.
 (pdftex.def)             Requested size: 199.16928pt x 107.1379pt.
-[18 <./obr/3Dbase-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 299.
@@ -1093,71 +1151,29 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./obr/3Dkolieska-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/3Dkolieska-eps-converted-to.pdf, id=216, 570.13pt x 281.05pt>
+<obr/3Dkolieska-eps-converted-to.pdf, id=230, 570.13pt x 281.05pt>
 File: obr/3Dkolieska-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/3Dkolieska-eps-converted-to.pdf>
 Package pdftex.def Info: obr/3Dkolieska-eps-converted-to.pdf  used on input lin
 e 301.
 (pdftex.def)             Requested size: 426.79134pt x 210.38814pt.
-) [19 <./obr/3Dprvok2.png> <./obr/3Ddrziak-eps-converted-to.pdf>] [20 <./obr/3D
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 301--302
+ [][] 
+ []
+
+) [22 <./obr/3Dprvok2.png> <./obr/3Ddrziak-eps-converted-to.pdf>] [23 <./obr/3D
 kolieska-eps-converted-to.pdf>]
 \openout2 = `Kapitola3.aux'.
 
  (Kapitola3.tex
 Kapitola 3.
-<obr/servo.png, id=238, 171.039pt x 107.80275pt>
-File: obr/servo.png Graphic file (type png)
-<use obr/servo.png>
-Package pdftex.def Info: obr/servo.png  used on input line 20.
-(pdftex.def)             Requested size: 142.26378pt x 89.6687pt.
-[21
+[24
 
 
 
 
 ]
-Package epstopdf Info: Source file: <obr/Potentiometer.eps>
-(epstopdf)                    date: 2022-05-22 22:44:33
-(epstopdf)                    size: 13239 bytes
-(epstopdf)             Output file: <obr/Potentiometer-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-05-22 22:44:54
-(epstopdf)                    size: 7150 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=obr/Potentiometer-ep
-s-converted-to.pdf obr/Potentiometer.eps>
-(epstopdf)             \includegraphics on input line 28.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./obr/Potentiometer-eps-converted-to.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/Potentiometer-eps-converted-to.pdf, id=242, 58.2175pt x 61.22874pt>
-File: obr/Potentiometer-eps-converted-to.pdf Graphic file (type pdf)
-<use obr/Potentiometer-eps-converted-to.pdf>
-Package pdftex.def Info: obr/Potentiometer-eps-converted-to.pdf  used on input 
-line 28.
-(pdftex.def)             Requested size: 85.35826pt x 89.78278pt.
-Package epstopdf Info: Source file: <obr/SensorRead.eps>
-(epstopdf)                    date: 2022-05-22 22:46:48
-(epstopdf)                    size: 7632 bytes
-(epstopdf)             Output file: <obr/SensorRead-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-05-22 22:47:16
-(epstopdf)                    size: 3899 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=obr/SensorRead-eps-c
-onverted-to.pdf obr/SensorRead.eps>
-(epstopdf)             \includegraphics on input line 36.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./obr/SensorRead-eps-converted-to.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/SensorRead-eps-converted-to.pdf, id=243, 67.25125pt x 63.23625pt>
-File: obr/SensorRead-eps-converted-to.pdf Graphic file (type pdf)
-<use obr/SensorRead-eps-converted-to.pdf>
-Package pdftex.def Info: obr/SensorRead-eps-converted-to.pdf  used on input lin
-e 36.
-(pdftex.def)             Requested size: 85.35826pt x 80.2628pt.
-[22 <./obr/servo.png> <./obr/Potentiometer-eps-converted-to.pdf> <./obr/SensorR
-ead-eps-converted-to.pdf>] [23]
 Package epstopdf Info: Source file: <obr/aritmeticky.eps>
 (epstopdf)                    date: 2022-05-24 10:32:12
 (epstopdf)                    size: 25251 bytes
@@ -1166,20 +1182,20 @@ Package epstopdf Info: Source file: <obr/aritmeticky.eps>
 (epstopdf)                    size: 8210 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=obr/aritmeticky-eps-
 converted-to.pdf obr/aritmeticky.eps>
-(epstopdf)             \includegraphics on input line 84.
+(epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./obr/aritmeticky-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/aritmeticky-eps-converted-to.pdf, id=260, 1156.32pt x 564.1075pt>
+<obr/aritmeticky-eps-converted-to.pdf, id=256, 1156.32pt x 564.1075pt>
 File: obr/aritmeticky-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/aritmeticky-eps-converted-to.pdf>
 Package pdftex.def Info: obr/aritmeticky-eps-converted-to.pdf  used on input li
-ne 84.
+ne 42.
 (pdftex.def)             Requested size: 483.69684pt x 235.96808pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 84--85
+Overfull \hbox (85.35825pt too wide) in paragraph at lines 42--43
  [][] 
  []
 
@@ -1192,22 +1208,22 @@ pdf>
 (epstopdf)                    size: 11635 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=obr/plavajuciAritmet
 icky-eps-converted-to.pdf obr/plavajuciAritmeticky.eps>
-(epstopdf)             \includegraphics on input line 92.
+(epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./obr/plavajuciAritmeticky-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<obr/plavajuciAritmeticky-eps-converted-to.pdf, id=261, 1156.32pt x 564.1075pt>
+<obr/plavajuciAritmeticky-eps-converted-to.pdf, id=257, 1156.32pt x 564.1075pt>
 
 File: obr/plavajuciAritmeticky-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/plavajuciAritmeticky-eps-converted-to.pdf>
 Package pdftex.def Info: obr/plavajuciAritmeticky-eps-converted-to.pdf  used on
- input line 92.
+ input line 50.
 (pdftex.def)             Requested size: 483.69684pt x 235.96808pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 92--93
+Overfull \hbox (85.35825pt too wide) in paragraph at lines 50--51
  [][] 
  []
 
@@ -1219,25 +1235,25 @@ Package epstopdf Info: Source file: <obr/plavajuciVazeny.eps>
 (epstopdf)                    size: 14443 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=obr/plavajuciVazeny-
 eps-converted-to.pdf obr/plavajuciVazeny.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./obr/plavajuciVazeny-eps-converted-to.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/plavajuciVazeny-eps-converted-to.pdf, id=262, 1156.32pt x 564.1075pt>
+<obr/plavajuciVazeny-eps-converted-to.pdf, id=258, 1156.32pt x 564.1075pt>
 File: obr/plavajuciVazeny-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/plavajuciVazeny-eps-converted-to.pdf>
 Package pdftex.def Info: obr/plavajuciVazeny-eps-converted-to.pdf  used on inpu
-t line 100.
+t line 58.
 (pdftex.def)             Requested size: 483.69684pt x 235.96808pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 100--101
+Overfull \hbox (85.35825pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[24 <./obr/aritmeticky-eps-converted-to.pdf>] [25 <./obr/plavajuciAritmeticky-e
-ps-converted-to.pdf> <./obr/plavajuciVazeny-eps-converted-to.pdf>]
+[25] [26 <./obr/aritmeticky-eps-converted-to.pdf> <./obr/plavajuciAritmeticky-e
+ps-converted-to.pdf>]
 Package epstopdf Info: Source file: <obr/aritmetickyVSvazeny.eps>
 (epstopdf)                    date: 2022-05-24 10:32:39
 (epstopdf)                    size: 39151 bytes
@@ -1247,75 +1263,181 @@ df>
 (epstopdf)                    size: 15410 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=obr/aritmetickyVSvaz
 eny-eps-converted-to.pdf obr/aritmetickyVSvazeny.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./obr/aritmetickyVSvazeny-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<obr/aritmetickyVSvazeny-eps-converted-to.pdf, id=284, 1156.32pt x 564.1075pt>
+<obr/aritmetickyVSvazeny-eps-converted-to.pdf, id=275, 1156.32pt x 564.1075pt>
 File: obr/aritmetickyVSvazeny-eps-converted-to.pdf Graphic file (type pdf)
 <use obr/aritmetickyVSvazeny-eps-converted-to.pdf>
 Package pdftex.def Info: obr/aritmetickyVSvazeny-eps-converted-to.pdf  used on 
-input line 109.
+input line 67.
 (pdftex.def)             Requested size: 483.69684pt x 235.96808pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 109--110
+Overfull \hbox (85.35825pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-) [26 <./obr/aritmetickyVSvazeny-eps-converted-to.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+6.
+(C:\Users\micha\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (8.67677pt too wide) in paragraph at lines 76--77
+\T1/cmr/m/n/12 ria-de-nia. Z toho dÙ-vodu je po-trebnÈ upra-vi¥ u∫ exis-tu-j˙cu
+ kni∫-nicu \T1/cmtt/m/n/12 BOBShield.h\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (7.08588pt too wide) in paragraph at lines 78--79
+[]\T1/cmr/m/n/12 Prvou ve-cou, ktor˙ sme spra-vili bola tvorba pre-men-nej \T1/
+cmtt/m/n/12 BOB_SHIELD_VERSION
+ []
+
+[27 <./obr/plavajuciVazeny-eps-converted-to.pdf>] [28 <./obr/aritmetickyVSvazen
+y-eps-converted-to.pdf>]
+<obr/servo.png, id=293, 171.039pt x 107.80275pt>
+File: obr/servo.png Graphic file (type png)
+<use obr/servo.png>
+Package pdftex.def Info: obr/servo.png  used on input line 103.
+(pdftex.def)             Requested size: 142.26378pt x 89.6687pt.
+ [29]
+Package epstopdf Info: Source file: <obr/Potentiometer.eps>
+(epstopdf)                    date: 2022-05-22 22:44:33
+(epstopdf)                    size: 13239 bytes
+(epstopdf)             Output file: <obr/Potentiometer-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-22 22:44:54
+(epstopdf)                    size: 7150 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/Potentiometer-ep
+s-converted-to.pdf obr/Potentiometer.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/Potentiometer-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/Potentiometer-eps-converted-to.pdf, id=297, 58.2175pt x 61.22874pt>
+File: obr/Potentiometer-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/Potentiometer-eps-converted-to.pdf>
+Package pdftex.def Info: obr/Potentiometer-eps-converted-to.pdf  used on input 
+line 111.
+(pdftex.def)             Requested size: 85.35826pt x 89.78278pt.
+Package epstopdf Info: Source file: <obr/SensorRead.eps>
+(epstopdf)                    date: 2022-05-22 22:46:48
+(epstopdf)                    size: 7632 bytes
+(epstopdf)             Output file: <obr/SensorRead-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-22 22:47:16
+(epstopdf)                    size: 3899 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/SensorRead-eps-c
+onverted-to.pdf obr/SensorRead.eps>
+(epstopdf)             \includegraphics on input line 119.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/SensorRead-eps-converted-to.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/SensorRead-eps-converted-to.pdf, id=298, 67.25125pt x 63.23625pt>
+File: obr/SensorRead-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/SensorRead-eps-converted-to.pdf>
+Package pdftex.def Info: obr/SensorRead-eps-converted-to.pdf  used on input lin
+e 119.
+(pdftex.def)             Requested size: 85.35826pt x 80.2628pt.
+[30 <./obr/servo.png> <./obr/Potentiometer-eps-converted-to.pdf> <./obr/SensorR
+ead-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <obr/PID.eps>
+(epstopdf)                    date: 2022-05-26 12:05:52
+(epstopdf)                    size: 37092 bytes
+(epstopdf)             Output file: <obr/PID-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-26 12:07:20
+(epstopdf)                    size: 29258 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/PID-eps-converte
+d-to.pdf obr/PID.eps>
+(epstopdf)             \includegraphics on input line 133.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/PID-eps-converted-to.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/PID-eps-converted-to.pdf, id=312, 451.6875pt x 151.56625pt>
+File: obr/PID-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/PID-eps-converted-to.pdf>
+Package pdftex.def Info: obr/PID-eps-converted-to.pdf  used on input line 133.
+(pdftex.def)             Requested size: 369.88582pt x 124.12323pt.
+Package epstopdf Info: Source file: <obr/PIDgraf.eps>
+(epstopdf)                    date: 2022-05-26 12:08:17
+(epstopdf)                    size: 178350 bytes
+(epstopdf)             Output file: <obr/PIDgraf-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-05-26 12:09:36
+(epstopdf)                    size: 173911 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=obr/PIDgraf-eps-conv
+erted-to.pdf obr/PIDgraf.eps>
+(epstopdf)             \includegraphics on input line 139.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./obr/PIDgraf-eps-converted-to.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<obr/PIDgraf-eps-converted-to.pdf, id=313, 1145.27875pt x 546.04pt>
+File: obr/PIDgraf-eps-converted-to.pdf Graphic file (type pdf)
+<use obr/PIDgraf-eps-converted-to.pdf>
+Package pdftex.def Info: obr/PIDgraf-eps-converted-to.pdf  used on input line 1
+39.
+(pdftex.def)             Requested size: 369.88582pt x 176.35275pt.
+) [31 <./obr/PID-eps-converted-to.pdf>] [32 <./obr/PIDgraf-eps-converted-to.pdf
+>]
 \openout2 = `Zaver.aux'.
 
  (Zaver.tex
 Kapitola 4.
-) [27
+) [33
 
 
 
 
-] (Zavereƒçn√° pr√°ca.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [28
+] (Zavereƒçn√° pr√°ca.bbl) [34
 
 
 
-] (Zavereƒçn√° pr√°ca.aux (Uvod.aux) (Kapitola1.aux) (Kapitola2.aux)
-(Kapitola3.aux) (Zaver.aux))
+] [35
 
-LaTeX Warning: There were undefined references.
+] [36] (Zavereƒçn√° pr√°ca.aux
+(Uvod.aux) (Kapitola1.aux) (Kapitola2.aux) (Kapitola3.aux) (Zaver.aux))
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9945 strings out of 478927
- 166988 string characters out of 2852535
- 526914 words of memory out of 3000000
- 27515 multiletter control sequences out of 15000+600000
- 416261 words of font info for 52 fonts, out of 8000000 for 9000
+ 10007 strings out of 478927
+ 168412 string characters out of 2852535
+ 528059 words of memory out of 3000000
+ 27572 multiletter control sequences out of 15000+600000
+ 417258 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,94p,2124b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+ 94i,10n,94p,2124b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
 1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx2488.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1728.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\micha\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk> <C:\Users\micha\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/micha/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/micha/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/m
-icha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb>
-Output written on "Zavereƒçn√° pr√°ca.pdf" (36 pages, 3537703 bytes).
+0\ectt1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcrm1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx2488.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\micha\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\micha\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\micha\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\micha\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk> <C:\Users\micha\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/micha/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/User
+s/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/micha/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Zavereƒçn√° pr√°ca.pdf" (43 pages, 3921944 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
+ 878 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

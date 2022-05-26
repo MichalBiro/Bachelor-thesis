@@ -1,6 +1,88 @@
 \chapter{BoBshield API}
 \label{kap:3}
 
+\section{API pre Arduino IDE}
+\label{kap:3.1}
+
+\subsection{Filtrácia}
+\label{kap:3.1.1}
+
+Pri meraniach presnosti ToF snímača pre rôzne materiály, povrchy a farby guličiek sme mohli pozorovať šum, ktorý nám pri nameraných hodnotách vznikal. Hoci tento nežiaduci jav nie je možné celkom odstrániť, môžeme jeho dopad na namerané hodnoty výrazne znížiť pomocou implementácie jednoduchej filtrácie nameraných hodnôt vhodnou metódou.
+Pre našu aplikáciu sme testovali 3 typy filtrácia a to pomocou aritmetického priemeru, aritmetického plávajúceho a váženého plávavjúceho priemeru. Pri testovaní sme postupovali nasledovne. Základom bolo získanie súboru nameraných hodnôt, na ktorý budeme môcť aplikovať filtre a následne navzájom porovnať ich výstupy. Vstup je pre všetky typy filtrov identický a preto môžeme spoľahlivejšie rozhodnúť o tom, ktorý z filtrov si zvolíme. Tieto hodnoty vstupu sme získali meraním polohy guličky pri jej posune z jednej koncovej polohy trubičky k druhej, pri minimálnom naklonení trubičky. Hodnoty boli získané a merané ešte na pôvodnej verzii zariadenia – BOBShield R2. 
+
+Pri aritmetickom priemere sme z určitého počtu nameraných hodnôt urobili aritmetický priemer a výstupom bola 1 hodnota, z čoho vyplýva, že frekvencia, s ktorou sme merali je násobne väčšia ako frekvencia, získavania filtrovaných hodnôt. To môže mať za následok spomalenie systému z hľadiska rýchlosti reakcie na zmenu polohy guličky. Vlastnosti daného typu filtráciu vieme ovplyvniť počtom nameraných hodnôt, z ktorých robíme aritmetický priemer. Zvyšovanie počtu hodnôt má za následok väčšie vyhladenie výslednej krivky, no zároveň spôsobuje určité oneskorenie, čo môže byť pozorované hlavne keď gulička rýchlo mení svoju polohu. 
+
+Rozdiel pri plávajúcom aritmetickom priemere je ten, že je založený na princípe zberu a ukladaní určitého počtu hodnôt, pričom pri každom ďalšom meraní sa nám najstaršia hodnota vymaže a pozíciu prvej hodnoty zaujme najnovšie nameraná hodnota. Z tohto súboru hodnôt sa nám pri každom meraní vypočíta aritmetický priemer, teda frekvencia merania a frekvencia získavania nameraných hodnôt je identická.
+
+Vážený plávajúci priemer je založený na princípe je založený na rovnakom princípe práce s nameranými hodnotami ako plávajúci aritmetický priemer. Rozdielom je, že každá hodnota má inú váhu (ako vyplýva z názvu), teda má rozdielny vplyv na výslednú hodnotu.  Výsledná hodnota sa následne vypočíta podľa nasledujúceho vzorca:
+
+
+
+\begin{align}
+	\label{rovnica.3.1.1.1}
+	priemer =\frac{\sum_{i=1}^{N}x_i*p(x_i)}{\sum_{i=1}^{N}p(x_i)} = \frac{ x_1*p(x_1)+x_2p(x_2)+\cdots +x_N*p(x_N)}{ p(x_1)+p(x_2)+\cdots +p(x_N)}
+\end{align}
+
+Vlastnosti filtrácie teda vieme ovplyvňovať jednak počtom hodnôt, z ktorých vážený priemer robíme, ale aj zmenou parametrov ovplyvňujúcich váhu jednotlivých hodnôt, teda vplyv na výsledok.
+
+Vzorku hodnôt, na ktorej sme porovnávali vplyv jednotlivých typov filtrov sme si vykreslili do grafu v prostredí MATLAB spolu s grafmi hodnôt získaných po aplikácii filtrov. Následne sme menili parametre filtrov, či už išlo o počet hodnôt, z ktorých sme tvorili priemer alebo pri váženom priemere, o nastavenie parametrov váženia.
+
+Pri procese hľadania parametrov pre vážený priemer sme uvažovali faktor zabúdania. Ide o bezrozmerné číslo z intervalu 0 až 1 a od jeho výberu závisí aké budú parametre jednotlivých váh pre dané hodnoty. Ak si zvolíme faktor zabúdania 0.9, väčšiu váhu budú mať práve staršie dáta. Naopak ak si zvolíme číslo blížiace sa k 0, dôraz bude kladený na najnovšie hodnoty. Jednotlivé koeficienty váh sa na základe faktora zabúdania získajú zo vzorca  \ref{rovnica.3.1.1.2}, kde $\lambda$ predstavuje faktor zabúdania. Pre rýchle systémy je lepšou voľbou výber menších hodnôt faktora.
+
+\begin{align}
+	\label{rovnica.3.1.1.2}
+	p_{n+1} = p_n*\lambda+1
+\end{align}
+
+
+Na obrázku \ref{OBRAZOK 3.1.1.1} môžeme vidieť graf filtrácie pomocou aritmetického priemeru pre rozdielny počet hodnôt, z ktorých sme priemer získali.  Hoci vyhladenie krivky vyzerá veľmi dobre, oproti plávajúcemu priemeru, hodnoty získavame s oveľa nižšou frekvenciou, čo vytvára oneskorenie reakcie na rýchlu zmenu polohy guličky. Preto je určite vhodnejšou variantov jeden z typov plávajúcich priemerov.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=170mm]{obr/aritmeticky.eps}
+	\caption{Aritmetický priemer}\label{OBRAZOK 3.1.1.1} 
+\end{figure}
+
+Na ďalšom grafe (obr. \ref{OBRAZOK 3.1.1.2} ) môžeme vidieť filtráciu prostredníctvom plávajúceho aritmetického priemeru. Rovnako sme testovali rôzne počty hodnôt z ktorých sme daný priemer robili. Z grafu môžeme vidieť, že pri vyšších počtoch hodnôt sa krivka výrazne lepšie vyhladí, no zároveň je na grafe očividné oneskorenie oproti nefiltrovaným dátam. Z daných možností, ktoré sme testovali sme sa rozhodli pre filtráciu pomocou 5 posledných hodnôt. Krivka dobre kopíruje nefiltrované dáta z hľadiska oneskorenia a zároveň dosahuje prijateľné vyhladenie šumu.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=170mm]{obr/plavajuciAritmeticky.eps}
+	\caption{Plávajúci aritmetický priemer}\label{OBRAZOK 3.1.1.2} 
+\end{figure}
+
+Na grafe (obr. \ref{OBRAZOK 3.1.1.3} ) vidíme porovnanie filtrácie pomocou plávajúceho váženého priemeru z 5 hodnôt pre rozdielne faktory zabúdania. Môžeme vidieť, že rozdiel medzi jednotlivými krivkami je minimálny. Rozhodli sme sa zvoliť faktor zabúdania $\lambda = 0.4$ , keďže potrebujeme rýchlu reakciu na zmenu aktuálnej vzdialenosti, čiže dôraz na posledné hodnoty.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=170mm]{obr/plavajuciVazeny.eps}
+	\caption{Plávajúci vážený priemer}\label{OBRAZOK 3.1.1.3} 
+\end{figure}
+
+
+Na obrázku \ref{OBRAZOK 3.1.1.4} môžeme vidieť porovnanie filtrácie plávajúceho aritmetického a váženého priemeru spolu s pôvodnými, nefiltrovanými nameranými hodnotami. Môžeme vidieť, že rozdiel medzi krivkami je minimálny. Jednoduchšou voľbou z hľadiska výpočtov je určite aritmetický priemer, čím budeme šetriť pamäť mikropočítača a výsledok bude takmer identický. Z tohto dôvodu sme sa rozhodli pre filtráciu pomocou plávajúceho aritmetického priemeru, počítaného z 5 posledných nameraných hodnôt.  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=170mm]{obr/aritmetickyVSvazeny.eps}
+	\caption{Porovnanie plávajúceho artimetického a váženeého priemeru}\label{OBRAZOK 3.1.1.4} 
+\end{figure}
+
+Po výbere vhodného filtra pre odstránenie šumu sme v knižnici BOBShield.h vytvorili novú funkciu – filterSensorRead(). Jej úlohou je teda odstránenie šumu pri čítaní hodnôt zo snímača a tým zlepšiť kvalitu riadenia systému.  
+
+\subsection{Knižnica}
+\label{kap:3.1.2}
+
+Zmeny prevedené na hardvéry sa samozrejme odrážajú aj v softvérovej časti zariadenia. Z toho dôvodu je potrebné upraviť už existujúcu knižnicu \texttt{BOBShield.h}, vytvorenú pre jednoduchú prácu so zariadením, aby bola kompatibilná aj s našou verziou zariadenia. 
+
+Prvou vecou, ktorú sme spravili bola tvorba premennej \texttt{BOB\_SHIELD\_VERSION} definovanej na začiatku knižnice. Slúži pre nastavenie verzie zariadenia, ktorú práve používame. Momentálne v nej môžu byť nastavené 2 hodnoty a to: 2 pre verziu R2 a 3 pre verziu R3. Túto premennú využívame pri funkciách, ktorých parametre sa pre jednotlivé verzie zariadenia líšia ako je napríklad \texttt{calibration} alebo \texttt{actuatorWrite}. Jedná sa teda hlavne o funkcie, v ktorých sa nachádza nastavenie rozsahu pohybu servomotora. 
+
+Pri funkcii \texttt{actuatorWrite}, bolo potrebné zmeniť rozsah pohybu servomotora a tiež prevod hodnôt zadávaných do funkcie na hodnoty, ktoré budú vstupovať do servomotora pri jeho riadení. Pri pôvodnej verzii išlo a jednoduchý prevod za použitia funkcie map  , kedy sa vstupné hodnoty z rozsahu -30 až 30 menili na hodnoty 65 až 125, pričom išlo a prevod celých čísel na celé čísla. 
+
+Keďže naším cieľom bolo zlepšiť presnosť otáčania trubičky a teda zvýšiť počet hodnôt, ktoré môže nadobúdať, rozhodli sme sa pre implementáciu prevodu, v ktorom 1\degree na servomotore sa rovná 0,2\degree na trubičke. Z tohto dôvodu nie je možné využiť funkciu \texttt{map}, keďže už ide o prevod desatinných čísiel na celé. Pre prevod sme sa rozhodli použiť funkciu \texttt{mapFloat} – naprogramovanú v knižnici AutomationShield, ktorá prevádza hodnoty desatinných čísiel opäť na desatinné čísla. Teda z premennej degree, ktorá slúži na posielanie hodnôt na servomotor, sa nám stane desatinné číslo. Servomotor však dokáže pracovať len s celými číslami a preto je potrebné použiť funkciu \texttt{round()}, ktorá nám premennú degree zaokrúhli na celé číslo, ktoré už následne môžeme použiť pri riadení servomotora. Za hodnoty vstupu sme si zvolili rozsah -17 až 17 a za výstupný rozsah uhlov na servomotore 10 až 170.  
+
+Funkcia \texttt{calibration} funguje na princípe hľadania krajných hodnôt vzdialeností guličky v trubičke pri jej pohybe. Najprv hľadá minimálnu hodnotu. Nastaví trubičku do krajnej hodnoty rozsahu jej otáčania a zmeria 100 hodnôt, z ktorých následne urobí aritmetický priemer a ten vloži do premennej minCalibrated. To isté sa deje aj pri hľadaní maximálnej hodnoty, ktorú vloží do premennej maxCalibrated. Jediné čím sa funkcia líši vo verzii R3 od pôvodnej verzie sú krajné hodnoty otočenia trubičky, tie bolo teda potrebné upraviť pre náš hardvér.
+
 
 \section{API pre Simulink}
 \label{kap:3.2}
@@ -9,7 +91,8 @@ Simulink je grafické programovacie prostredie založené na MATLABe a určené 
 
 \subsection{Knižnica}
 \label{kap:3.2.1}
-Pre tvorbu rozhrania pre programovanie nášho zariadenie v prostredí Simulink je potrebné vytvoriť vlastnú knižnicu, ktoré obsahuje potrebné funkcie pre komunikáciu so zariadením. Táto sa ale svojou formou líši od knižnice vytvorenej pre prostredie Arduino IDE. V porovnaní s ňou neobsahuje kód ako taký ale skladá sa s jednotlivých blokov, ktorých úlohou je zastrešiť určitú funkciu a následným spájaním blokov do diagramu vytvárame výsledný program, ktorý je následne pri kompilácii nahraný do mikropočítača. Knižnica je teda klasický súbor pre Simulink model ( .slx ) obsahujúci dané bloky a do zoznamu knižníc v programovacom prostredí je pridaný prostredníctvo MATLAB kódu. Aby sme knižnicu vedeli dostúpiť je potrebné spustiť súbor s názvom InstallMatlabAndSimulink nachádzajúci sa v knižnici AutomationShield. Jeho úlohou je nastaviť všetky cesty tak aby program vedel nájsť potrebné súbory pre implementáciu knižnice. 
+Pre tvorbu rozhrania pre programovanie nášho zariadenie v prostredí Simulink je potrebné vytvoriť vlastnú knižnicu, ktorá obsahuje potrebné funkcie pre komunikáciu so zariadením.  Táto sa ale svojou formou líši od knižnice vytvorenej pre prostredie Arduino IDE. V porovnaní s ňou neobsahuje kód ako taký ale skladá sa s jednotlivých blokov, ktorých úlohou je zastrešiť určitú funkciu a následným spájaním blokov do diagramu vytvárame výsledný program, ktorý je následne pri kompilácii nahraný do mikropočítača. Knižnica je teda klasický súbor pre Simulink model ( .slx ) obsahujúci dané bloky a do zoznamu knižníc v programovacom prostredí je pridaný prostredníctvo MATLAB kódu. Aby sme knižnicu vedeli dostúpiť je potrebné spustiť súbor s názvom InstallMatlabAndSimulink nachádzajúci sa v knižnici AutomationShield. Jeho úlohou je nastaviť všetky cesty tak aby program vedel nájsť potrebné súbory pre implementáciu knižnice. Knižnica BOBShield pre Simulink už bola rozpracovaná. V našej práci sme ju sfunkčnili a doplnili o potrebné funkcie. Následne sme ju vložili medzi ostatné knižnice nachádzajúce sa AutomationShield API pre Simulink.
+
 
 Jednotlivé bloky nachádzajúce sa v BOBShield knižnici teda slúžia rovnako ako funkcie naprogramované v knižnici pre Arduino IDE a zastrešujú rovnaké úlohy.
 
@@ -37,75 +120,26 @@ Blok Reference Read nám v diagrame reprezentuje potenciometer umiestnený na BO
 	\caption{blok Sensor Read}\label{OBRAZOK 3.1.3} 
 \end{figure} 
 
-Posledným blokom je blok Filtration slúži na vyhľadenie šumu snímača....
+Posledným blokom je blok Filtrated Sensor Read (obr. ), ktorého úlohou je vyhľadenie šumu snímača pri meraní vzdialenosti guličky. Ide o implementácia filtrácie signálu, ktorú sme si zvolili na základe testovaní viacerých typov filtrácií na nami nameranej zložke dát. Na vyhladenie šumu používame plávajúci aritmetický priemer počítaní z posledných piatich nameraných hodnôt. Daný blok sme vytvorili ako subsystém, do ktorého sme vložili blok Sensor Read a výstup z neho sme vložili do bloku Moving Averge, v ktorom sme si za veľkosť okna (parameter window length) zvolili 5 hodnôt a jeho výstup sme zaviedli na výstup zo subsystému. 
 
 
-\subsection{Príklady}
+\subsection{PID príklad}
 \label{kap:3.2.2}
 
-\section{API pre Arduino IDE}
-\label{kap:3.3}
+Riadenie systému pomocou PID regulátora je jeden z najznámejších typov riadenia systému. Naše zariadenie sme sa teda rozhodli riadiť pomocou PID regulátora v uzavretej riadiacej slučke (obr.\refeq{OBRAZOK 3.2.2.1} ). V princípe sa v schéme nachádza slučka so spätnou väzbou zo zariadenia, ktorá porovnáva aktuálny stav systému s referenčnou hodnotu a na základe toho vyhodnocuje akčný zásah do systému. V našom zapojení referenčnú hodnotu dostávame z bloku Reference Read,  ktorý nám ponúka aktívne ju meniť pomocou otáčania bežcom na potenciometri. Spätnú väzbu o stave zariadenia sme získavame prostredníctvom bloku Filtered Sensor Read, ktorý nám hovorí o aktuálnej pozícii guličky v zariadení. Blok PID nám následne na základe vypočítanej chyby určí akčný zásah do systému a pošle ho do bloku Actuator Write, ktorý následne nastaví pozíciu servomotora do požadovanej hodnoty.
 
-\subsection{Filtrácia}
-\label{kap:3.3.1}
-
-Pri meraniach presnosti ToF snímača pre rôzne materiály, povrchy a farby guličiek sme mohli pozorovať šum, ktorý nám pri nameraných hodnotách vznikal. Hoci tento nežiaduci jav nie je možné celkom odstrániť, môžeme jeho dopad na namerané hodnoty výrazne znížiť pomocou implementácie jednoduchej filtrácie nameraných hodnôt vhodnou metódou.
-Pre našu aplikáciu sme testovali 3 typy filtrácia a to pomocou aritmetického priemeru, aritmetického plávajúceho a váženého plávavjúceho priemeru. Pri testovaní sme postupovali nasledovne. Základom bolo získanie súboru nameraných hodnôt, na ktorý budeme môcť aplikovať filtre a následne navzájom porovnať ich výstupy. Vstup je pre všetky typy filtrov identický a preto môžeme spoľahlivejšie rozhodnúť o tom, ktorý z filtrov si zvolíme. Tieto hodnoty vstupu sme získali meraním polohy guličky pri jej posune z jednej koncovej polohy trubičky k druhej, pri minimálnom naklonení trubičky. Hodnoty boli získané a merané ešte na pôvodnej verzii zariadenia – BOBShield R2. 
-
-Pri aritmetickom priemere sme z určitého počtu nameraných hodnôt urobili aritmetický priemer a výstupom bola 1 hodnota, z čoho vyplýva, že frekvencia, s ktorou sme merali je násobne väčšia ako frekvencia, získavania filtrovaných hodnôt. To môže mať za následok spomalenie systému z hľadiska rýchlosti reakcie na zmenu polohy guličky. Vlastnosti daného typu filtráciu vieme ovplyvniť počtom nameraných hodnôt, z ktorých robíme aritmetický priemer. Zvyšovanie počtu hodnôt má za následok väčšie vyhladenie výslednej krivky, no zároveň spôsobuje určité oneskorenie, čo môže byť pozorované hlavne keď gulička rýchlo mení svoju polohu. 
-
-Rozdiel pri plávajúcom aritmetickom priemere je ten, že je založený na princípe zberu a ukladaní určitého počtu hodnôt, pričom pri každom ďalšom meraní sa nám najstaršia hodnota vymaže a pozíciu prvej hodnoty zaujme najnovšie nameraná hodnota. Z tohto súboru hodnôt sa nám pri každom meraní vypočíta aritmetický priemer, teda frekvencia merania a frekvencia získavania nameraných hodnôt je identická.
-
-Vážený plávajúci priemer je založený na princípe je založený na rovnakom princípe práce s nameranými hodnotami ako plávajúci aritmetický priemer. Rozdielom je, že každá hodnota má inú váhu (ako vyplýva z názvu), teda má rozdielny vplyv na výslednú hodnotu.  Výsledná hodnota sa následne vypočíta podľa nasledujúceho vzorca:
-
-
-
-\begin{align}
-	\label{rovnica.3.3.1.1}
-	priemer =\frac{\sum_{i=1}^{N}x_i*p(x_i)}{\sum_{i=1}^{N}p(x_i)} = \frac{ x_1*p(x_1)+x_2p(x_2)+\cdots +x_N*p(x_N)}{ p(x_1)+p(x_2)+\cdots +p(x_N)}
-\end{align}
-
-Vlastnosti filtrácie teda vieme ovplyvňovať jednak počtom hodnôt, z ktorých vážený priemer robíme, ale aj zmenou parametrov ovplyvňujúcich váhu jednotlivých hodnôt, teda vplyv na výsledok.
-
-Vzorku hodnôt, na ktorej sme porovnávali vplyv jednotlivých typov filtrov sme si vykreslili do grafu v prostredí MATLAB spolu s grafmi hodnôt získaných po aplikácii filtrov. Následne sme menili parametre filtrov, či už išlo o počet hodnôt, z ktorých sme tvorili priemer alebo pri váženom priemere, o nastavenie parametrov váženia.
-
-Pri procese hľadania parametrov pre vážený priemer sme uvažovali faktor zabúdania. Ide o bezrozmerné číslo z intervalu 0 až 1 a od jeho výberu závisí aké budú parametre jednotlivých váh pre dané hodnoty. Ak si zvolíme faktor zabúdania 0.9, väčšiu váhu budú mať práve staršie dáta. Naopak ak si zvolíme číslo blížiace sa k 0, dôraz bude kladený na najnovšie hodnoty. Jednotlivé koeficienty váh sa na základe faktora zabúdania získajú zo vzorca  \ref{rovnica.3.3.1.2}, kde $\lambda$ predstavuje faktor zabúdania. Pre rýchle systémy je lepšou voľbou výber menších hodnôt faktora.
-
-\begin{align}
-	\label{rovnica.3.3.1.2}
-	p_{n+1} = p_n*\lambda+1
-\end{align}
-
-
-Na obrázku \ref{OBRAZOK 3.3.1.1} môžeme vidieť graf filtrácie pomocou aritmetického priemeru pre rozdielny počet hodnôt, z ktorých sme priemer získali.  Hoci vyhladenie krivky vyzerá veľmi dobre, oproti plávajúcemu priemeru, hodnoty získavame s oveľa nižšou frekvenciou, čo vytvára oneskorenie reakcie na rýchlu zmenu polohy guličky. Preto je určite vhodnejšou variantov jeden z typov plávajúcich priemerov.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=130mm]{obr/PID.eps}
+	\caption{Schéma zapojenia - príklad PID riadenia}\label{OBRAZOK 3.2.2.1} 
+\end{figure} 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=170mm]{obr/aritmeticky.eps}
-	\caption{Aritmetický priemer}\label{OBRAZOK 3.3.1.1} 
-\end{figure}
-
-Na ďalšom grafe (obr. \ref{OBRAZOK 3.3.1.2} ) môžeme vidieť filtráciu prostredníctvom plávajúceho aritmetického priemeru. Rovnako sme testovali rôzne počty hodnôt z ktorých sme daný priemer robili. Z grafu môžeme vidieť, že pri vyšších počtoch hodnôt sa krivka výrazne lepšie vyhladí, no zároveň je na grafe očividné oneskorenie oproti nefiltrovaným dátam. Z daných možností, ktoré sme testovali sme sa rozhodli pre filtráciu pomocou 5 posledných hodnôt. Krivka dobre kopíruje nefiltrované dáta z hľadiska oneskorenia a zároveň dosahuje prijateľné vyhladenie šumu.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=170mm]{obr/plavajuciAritmeticky.eps}
-	\caption{Plávajúci aritmetický priemer}\label{OBRAZOK 3.3.1.2} 
-\end{figure}
-
-Na grafe (obr. \ref{OBRAZOK 3.3.1.3} ) vidíme porovnanie filtrácie pomocou plávajúceho váženého priemeru z 5 hodnôt pre rozdielne faktory zabúdania. Môžeme vidieť, že rozdiel medzi jednotlivými krivkami je minimálny. Rozhodli sme sa zvoliť faktor zabúdania $\lambda = 0.4$ , keďže potrebujeme rýchlu reakciu na zmenu aktuálnej vzdialenosti, čiže dôraz na posledné hodnoty.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=170mm]{obr/plavajuciVazeny.eps}
-	\caption{Plávajúci vážený priemer}\label{OBRAZOK 3.3.1.3} 
-\end{figure}
+	\includegraphics[width=130mm]{obr/PIDgraf.eps}
+	\caption{Výstup z priebehu riadenia }\label{OBRAZOK 3.2.2.2} 
+\end{figure} 
+Na obrázku \refeq{OBRAZOK 3.2.2.2} môžeme vidieť výstup z priebehu riadenia, kedy krivka čiernej farby reprezentuje referenčnú hodnotu, modrá aktuálnu pozíciu guličky a červená akčný zásah do systému. Môžeme vidieť, že zariadenie na zmenu referenčnej hodnoty aktívne reaguje a snaží sa pomocou zásahu do systému regulovať polohu guličky v danej polohe. Gulička zatiaľ len osciluje okolo referenčnej polohy ale  po dôkladnom naladení by mal byť systém schopný udržať jej pozíciu priamo na požadovanej hladine. Momentálne z hľadiska problémov pri komunikácii hardvéru s rozhraním Simulink sme neboli schopný aplikovať riadny a detailný proces ladenia PID regulátora. No môžeme vidieť, že daný proces PID riadenia pomocou programu Simulink je možné uskutočniť a knižnica je plne funkčná.
 
 
-Na obrázku \ref{OBRAZOK 3.3.1.4} môžeme vidieť porovnanie filtrácie plávajúceho aritmetického a váženého priemeru spolu s pôvodnými, nefiltrovanými nameranými hodnotami. Môžeme vidieť, že rozdiel medzi krivkami je minimálny. Jednoduchšou voľbou z hľadiska výpočtov je určite aritmetický priemer, čím budeme šetriť pamäť mikropočítača a výsledok bude takmer identický. Z tohto dôvodu sme sa rozhodli pre filtráciu pomocou plávajúceho aritmetického priemeru, počítaného z 5 posledných nameraných hodnôt.  
 
-\begin{figure}
-	\centering
-	\includegraphics[width=170mm]{obr/aritmetickyVSvazeny.eps}
-	\caption{Porovnanie plávajúceho artimetického a váženeého priemeru}\label{OBRAZOK 3.3.1.4} 
-\end{figure}

@@ -1,3 +1,10 @@
 \chapter{Záver}
 
-Táto časť diplomovej práce je povinná. Autor práce uvedie zhodnotenie riešenia, jeho výhody resp. nevýhody, použitie výsledkov, ďalšie možnosti a podobne.  Môže aj načrtnúť iný spôsob riešenia úloh, resp. uvedie, prečo postupoval uvedeným spôsobom.
+Cieľom tejto bakalárskej práce bolo zrevidovať existujúci hardvér, navrhnúť a realizovať jeho zmeny, vytvoriť API v programovacom prostredí Simulink a zrealizovať príklady riadenia systému na novom hardvéry a v novom programovacom prostredí. 
+
+Podarilo sa nám výrazne vylepšiť hardvérovú časť zariadenie, kde sme pomocou aplikácie prevodu medzi servomotorom a trubičkou zvýšili presnosť jej otáčania z 1\degree na 0,2\degree. Tiež sme dôkladnou analýzou výberu vhodnej guličky pre náš systém znížili smerodajnú odchýlku pri meraní snímača. Z hľadiska softvéru sme pridali do pôvodnej knižnice v Arduino IDE, funkcie na filtráciu šumu a upravili sme pôvodné funkcie aby boli kompatibilné s obidvoma verziami zariadenia R2 a R3. Vytvorili sme API pre Simulink a overili jeho funkčnosť na príklade PID riadenia systému.
+
+Taktiež sme sa snažili o tvorbu API v programovacom prostredí MATLAB, ku ktorému sme vytvorili knižnicu, no narazili sme na problém v  komunikácii medzi programovacím prostredím MATLAB a ToF snímačom, ktorý sme v našom zariadení použili. Tento problém mohol vzniknúť 
+
+Do budúcna zariadenie stále ponúka priestor na zlepšenie. Môže dôjsť ku tvorbe nových príkladov LQ riadenia pre obe API, taktiež ku procesu identifikácie systému na novom hardvéry. Taktiež ku tvorbe funkcie na nastavenie vodorovnej polohy trubičky pri kalibrácii systému, ktorá nemohla byť vytvorená z dôvodu nedodanie komponentov na jej realizáciu.
+

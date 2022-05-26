@@ -202,23 +202,23 @@ Pri meraní sme postupovali nasledovne. Guličku sme nastavili do krajnej polohy
     \label{TABULKA_2_1}
 \end{table}
 Ako bolo vyššie spomenuté, dynamika systému má veľký vplyv na jeho riadenie. Z toho dôvodu je pri výbere guličky dôležitá práve rýchlosť akou sa gulička v systéme pohybuje. Ak je gulička príliš rýchla  , riadiaci systém má menej času reagovať na zmenu jej polohy, ktorá sa hlavne pri výraznej zmene referenčnej hodnoty výrazne mení. Keďže dĺžka trubičky je pomerne malá (100 mm), ak riadiaci systém nedokáže včas zareagovať  na zmenu jej polohy bude dochádzať k nárazom guličky do krajných polôh trubičky, čo je pri riadení nežiaduci jav. Z toho dôvodu sa snažíme voliť guličku, ktorej rýchlosť je adekvátna pre našu aplikáciu. Rýchlosť guličky je závislá jednak od jej hmotnosti, materiálu, kvality povrchu a rozmerov.
-Pri meraní sme zaznamenávali polohu guličky a čas, v ktorom sa v danej polohe nachádzala. Pohyb guličky bol z jednej krajnej polohy trubičky do druhej krajnej polohy pri naklonení trubičky o uhol 5 \degree. Následne sme namerané hodnoty vykreslili do grafu v programe MATLAB a pomocou analýzy grafu sme našli čas, za ktorý gulička prešla danú vzdialenosť trubičky. Hodnoty sme zapísali do tabuľky a vypočítali rýchlosť jednotlivých guličiek.
+Pri meraní sme zaznamenávali polohu guličky a čas, v ktorom sa v danej polohe nachádzala. Pohyb guličky bol z jednej krajnej polohy trubičky do druhej krajnej polohy pri naklonení trubičky o uhol 5 \degree. Následne sme namerané hodnoty vykreslili do grafu (príloha) v programe MATLAB a pomocou jeho analýzy sme našli čas, za ktorý gulička prešla danú vzdialenosť trubičky. Postupovali sme nasledovne. V grafe sme si našli body kedy sa gulička nachádzala v vzdialenosti 80 mm a 20 mm od snímača. Z tabuľky sme si vypočítali za aký čas gulička túto vzdialenosť 60 mm prešla. Hodnoty sme zapísali do tabuľky (príloha) a vypočítali rýchlosť jednotlivých guličiek. 
 
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
 		\textbf{Materiál}           & silikón & POM    & drevo  & NBR                            & NR     & oceľ                           & PP                             \\ \hline
-		\textbf{rýchlosť {[}m/s{]}} & 0,0862  & 0,1035 & 0,1178 & \cellcolor[HTML]{9AFF99}0,0766 & 0,1128 & \cellcolor[HTML]{FFCCC9}0,1214 & \cellcolor[HTML]{FFFFFF}0,0895 \\ \hline
+		\textbf{rýchlosť {[}m/s{]}} & 0,1348  &\cellcolor[HTML]{FFCCC9} 0,1504 & 0,1412 & \cellcolor[HTML]{9AFF99}0,0917 & 0,1279 & 0,1348 & \cellcolor[HTML]{FFFFFF}0,1412 \\ \hline
 	\end{tabular}
     \caption{Rýchlosti guličiek pre dané materiály}
     \label{TABULKA_2_2}
 \end{table}
 
-V tabuľke \ref{TABULKA_2_2} môžeme vidieť porovnanie rýchlosti jednotlivých guličiek pri pohybe mierne naklonenou trubičkou. Najpomalšie sa pohybujúcou je gulička z NBR, ktorá oproti guličke z ocele, použitej v pôvodných verziách zariadenia dosahuje takmer polovičné priemerné rýchlosti.  
-Na základe vykonaných meraní sme sa rozhodli zvoliť si za teleso v systéme guličku vyrobenú z polypropylénu (PP). Snímač dosahuje pri danej guličke najpresnejšie merania, takže meraná poloha guličky sa najviac približuje jej skutočnej polohe. Meranie s čo najmenšou smerodajnou odchylkou je pri riadení systému kľúčové, no treba uvažovať aj dynamiku guličky. Z nameraných rýchlostí guličiek by pre nás bola najvhodnejšou voľbou gulička z NBR, no jej presnosti merania sú výrazne horšie v porovnaní s guličkou PP. Tá ale dosahuje tiež prijateľné rýchlosti pre našu aplikáciu, preto sme si ju vybrali za naše teleso z nami testovaných guličiek.
+V tabuľke \ref{TABULKA_2_2} môžeme vidieť porovnanie rýchlosti jednotlivých guličiek pri pohybe mierne naklonenou trubičkou. Najpomalšie sa pohybujúcou je gulička z NBR, ktorá oproti guličke z ocele, použitej v pôvodných verziách zariadenia dosahuje výrazne nižšie rýchlosti pohybu v trubičke.  
+Na základe vykonaných meraní sme sa rozhodli zvoliť si za teleso v systéme guličku vyrobenú z polypropylénu (PP). Snímač dosahuje pri danej guličke najpresnejšie merania, takže meraná poloha guličky sa najviac približuje jej skutočnej polohe. Meranie s čo najmenšou smerodajnou odchylkou je pri riadení systému kľúčové, no treba uvažovať aj dynamiku guličky. Z nameraných rýchlostí guličiek by pre nás bola najvhodnejšou voľbou gulička z NBR, no jej presnosti merania sú výrazne horšie v porovnaní s guličkou PP. Tá hoci na základe meraní nedosahuje najlepšie rýchlosti pre našu aplikáciu, no napriek tomu sme sa rozhodli zvoliť si ju, na základe dobrých výsledkov pri smerodajnej odchylke merania. Dobrou voľbou by mohli byť aj guličky zo silikónu alebo materiálu NR. Tie však nespĺňajú požiadavky na tvar guličky, keďže pri ich výroba na ich povrchu ostáva stopa po forme, ktorá následne bráni plynulému pohybu guličky v trubičke.
 
-Ak porovnáme guličku z ocele, ktorá je telesom použitým v pôvodnej verzii a guličky z PP, ktorú sme na základe meraní vybrali, môžeme pozorovať výrazné zlepšenie merania snímača z hľadiska smerodajných odchýlok ako aj spomalenie pohybu guličky v trubičke. 
+Ak porovnáme guličku z ocele, ktorá je telesom použitým v pôvodnej verzii a guličky z PP, ktorú sme na základe meraní vybrali, môžeme pozorovať výrazné zlepšenie merania snímača z hľadiska smerodajných odchýlok.
 
 \section{Prevod rotačného pohybu - servo, trubička}  
 \label{kap:2.4}

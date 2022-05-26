@@ -17,19 +17,37 @@ V projekte existuje niekoľko rôznych typov zariadení, ktoré simulujú riaden
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=80mm]{obr/experimentBOB.eps}
-	\caption{Systém gulička na tyči }\label{OBRAZOK 1.2} 
+	\caption{Systém gulička na tyči \cite{BOBexperiment}}\label{OBRAZOK 1.2} 
 \end{figure} 
+
+
+Náš systém sa od systému na obrázku mierne líši. Namieste tyče sa gulička pohybuje uprostred trubičky a jej stred otáčania sa nenachádza na konci trubičky ako to môžeme vidieť na obr. \ref{OBRAZOK 1.2}. Uložená je v držiaku, ktorý sa nachádza v jej strede a práve pomocou neho je na ňu prenášaný krútiaci moment zo servomotora. V pôvodnej verzii sa teda nenachádzal ani prevod spomenutý na obrázku, držiak bol priamo pripevnený k servomotoru. Prevod sme však pri vylepšovaní hardvéru zahrnuli do jeho zmien, no oproti klasickému riešeniu uvedenému na obrázku sme zvolil náš vlastný originálny prístup. Výhodnou tohto spôsobu zostavenia systému sú jeho rozmery, sú dostatočne malé aby sme vedeli celý model uložiť na Arduino shield.
+
 
 \section{Bobshield R2}
 \label{kap:1.3}
-Vývoj zariadenia je náročný proces vyžadujúci si určitý čas, skúšanie nových možností a vylepšení, či už sa jedná hardvérovú alebo softvérovú časť. Používaním zariadenia postupne dochádzame k novým nápadom na vylepšenie a tie postupne implementuje a dolaďujeme čím sa postupne blížime k ideálnemu riešeniu. Tento stav však takmer nikdy nedosiahneme vzhľadom k neustálemu vývoju a preto je vždy priestor na zmeny a aktualizáciu projektu. Aj BOBShield si už prešiel mnohými zmenami, čo sa použitých komponentov, dizajnu alebo API  týka. Poslednou verziou je BOBShield R2, ktorá bola vytvorená na Strojníckej fakulte Slovenskej Technickej univerzity ako téma diplomovej práce.  
+Vývoj zariadenia je náročný proces vyžadujúci si určitý čas, skúšanie nových možností a vylepšení, či už sa jedná o hardvérovú alebo softvérovú časť. Používaním zariadenia postupne dochádzame k novým nápadom na vylepšenie a tie postupne implementuje a dolaďujeme, čím sa blížime k ideálnemu riešeniu. Tento stav však takmer nikdy nedosiahneme vzhľadom k neustálemu vývoju a preto je vždy priestor na zmeny a aktualizáciu projektu. Aj BOBShield si už prešiel mnohými zmenami, čo sa použitých komponentov, dizajnu alebo API  týka. Prvá verzia BOBShield R1 (obr.\ref{OBRAZOK 1.3})  vznikla ako výsledok práce študentov na predmete mikroprocesorová technika 2, na ústave Automatizácie a merania STU v Bratislave. 
 
-\subsection{R2 hardvér}
-\label{kap:1.3.1}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=80mm]{obr/R1.eps}
+	\caption{BOBShield R1 \cite{Anicka}}\label{OBRAZOK 1.3} 
+\end{figure} 
 
+Poslednou verziou je BOBShield R2 (obr. \ref{OBRAZOK 1.4}) a bola vytvorená ako súčasť diplomovej práce na Strojníckej fakulte STU v Bratislave.  Oproti prvej verzii prišlo k zmenám hardvéru, kde bolo zmenené rozloženie komponentov na shielde, došlo k vylepšeniu 3D prvkov a zmene veľkosti trubičky a guličky. Tiež boli vytvorené nové príklady pre zariadenie v protredí Arduino IDE ako napríklad identifikácia systému. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=80mm]{obr/R1.eps}
+	\caption{BOBShield R2 \cite{Anicka}}\label{OBRAZOK 1.4} 
+\end{figure} 
 
 \subsection{R2 softvér}
-\label{kap:1.3.2}
+\label{kap:1.3.1}
+Z programových prostredí, ktoré sa v projekte AutomationShield využívajú k riadeniu systému, konkrétne ide o Arduino IDE, MATLAB a Simulink bolo vytvorené API (aplikačné programovacie prostredie) len v prostredí Arduino IDE. Pozostáva z knižnice BOBShield.h a niekoľkých príkladov ako je regulácia alebo identifikácia systému. To ponúka priestor pre tvorbu nových API v už spomenutých programovacích prostrediach. 
 
+
+\subsection{R2 hardvér}
+\label{kap:1.3.2}
+Z hľadiska hardvéru ponúka verzia R2 priestor pre analýzu použitých komponentov a ich porovnanie s novými možnosťami ponúkanými na trhu. Tiež je možné zvýšenie presnosti otáčania trubičky o implementáciou už spomínaného prevodu medzi servomotorom a držiakom trubičky. Z toho následne vyplýva aj zmena 3D prvkov a celkového dizajnu zariadenia. 
 

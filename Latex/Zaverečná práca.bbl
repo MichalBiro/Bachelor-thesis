@@ -1,3 +1,24 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{MPU6050}
+{InvenSense Inc.}
+\newblock Mpu-6000 and mpu-6050 product specification revision 3.4.
+\newblock Online., 2013.
+\newblock
+  21.4.2022,\url{https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf}.
+
+\bibitem{VL6180X}
+{STMicroelectronics}.
+\newblock Vl6180x - proximity and ambient light sensing module.
+\newblock Online., 2016.
+\newblock
+  21.4.2022,\url{https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf}.
+
+\bibitem{LDO}
+{STMicroelectronics}.
+\newblock St732 datasheet.
+\newblock Online., 2021.
+\newblock
+  28.4.2022,\url{https://www.mouser.sk/ProductDetail/STMicroelectronics/ST732M28R?qs=MLItCLRbWsxtXiiWQqtIMw%3D%3D}.
 
 \end{thebibliography}
